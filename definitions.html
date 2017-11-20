@@ -301,13 +301,13 @@
                             <div class="collapse" id="detailB1">
                                 <hr />
                                 <p class="text-primary">
-                                    <b>Further explanation:</b> Stage applies to the following Method Ringing terms: Rows, Changes, Methods, Compositions and Rowsequences.
+                                    <b>Further explanation:</b> Stage applies to the following Method Ringing terms: Rows, Changes, Methods, Compositions and Blocks.
                                 </p>
                                 <p class="text-primary">
                                     The Stage of a Row is the number of bells in that Row.
                                 </p>
 								<p class="text-primary">
-                                    The application of Stage to Changes, Methods, Compositions and Rowsequences will be covered in the 'Further Explanation' sections of
+                                    The application of Stage to Changes, Methods, Compositions and Blocks will be covered in the 'Further Explanation' sections of
                                     the definitions of those terms.
                                 </p>
                                 <hr />
@@ -393,7 +393,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Change that transposes each bell in a Row to the same Place in a new Row.
+                                A Change that transposes each bell to the same Place in a new Row.
                             </p>
                             <div class="collapse" id="detailC2">
                                 <hr />
@@ -417,7 +417,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Change that transposes each bell in a Row to either the same Place or an adjacent Place in
+                                A Change that transposes each bell to either the same Place or an adjacent Place in
                                 a new Row, but which is not an Identity Change.
                             </p>
                             <div class="collapse" id="detailC3">
@@ -446,7 +446,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Change that transposes at least one bell in a Row to a different and non-adjacent Place in a new Row.
+                                A Change that transposes at least one bell to a different and non-adjacent Place in a new Row.
                             </p>
                             <div class="collapse" id="detailC4">
                                 <hr />
@@ -511,14 +511,6 @@
 
 								<p class="text-primary">
                                      A Method has the Stage of its constituent Changes.
-                                </p>
-
-                                <p class="text-primary">
-                                    A sequence of Changes is used to produce a sequence of Rows as follows:<br/>
-                                    - Apply the first Change in the sequence to an initial Row that has the same Stage as the Change to produce a second Row.<br/>
-                                    - Then apply the second Change in the sequence to the second Row to produce a third Row.<br/>
-                                    - Then apply the third Change in the sequence to the third Row to produce a fourth Row, and so on.<br/>
-                                    - The Row that is produced by applying the final Change in the sequence is referred to as the final Row.
                                 </p>
                                 <hr />
                             </div>
@@ -651,27 +643,25 @@
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A bell that occupies a Place in a Row that is not one of the Places operated on by the
-                                    Method being applied to that Row.
+                                Change applied to that Row.
                             </p>
                             <div class="collapse" id="detailE1">
                                 <hr />
                                 <p class="text-danger">
-                                    <b>Example:</b> A Doubles Method is used with 6-bell Rows, where the Method's Changes
-                                    operate on Places 1 to 5, and 6th's Place contains a Cover Bell (usually the tenor).
+                                    <b>Example:</b> A Doubles Change is applied to a Minor Row, where the Change operates on
+                                    Places 1 to 5.  6th's Place therefore contains a Cover Bell (usually the tenor).
                                 </p>
                                 <hr />
                                 <p class="text-primary">
-                                    <b>Further explanation:</b> Note that in a Row containing one or more Cover Bells, the numbering of the Places
-                                    may be modified to exclude the Cover Bell(s). For example, in Doubles with a Cover
-                                    Bell in 6th's Place, the bell in 5th's Place may be said to be lying.
+                                    <b>Further explanation:</b> A Cover Bell remains in the same Place from one Row to the next.
+                                    In the example above, if the Doubles Change being applied to the Row has place notation "3",
+                                    the Change can also be deemed to be "36" to include the transposition of the Cover Bell to the new Row.
                                 </p>
-                                <hr />
-                                <p class="text-muted">
-                                    <b>Technical comments:</b> More formally, a Cover Bell: <br />
-                                    1. Occupies a Place in a Row that is not one of the Places operated on by the
-                                    Method(s) being applied to that Row; and <br />
-                                    2. Remains in the same Place from one Row to the next unless it is affected by a Call,
-                                    or unless there is a change to a Method whose Changes operate on the Cover Bell’s Place.
+
+                                <p class="text-primary">
+                                    In a Row containing one or more Cover Bells, the numbering of the Places
+                                    may be modified to exclude the Cover Bell(s). In the example above,
+                                    the bell in 5th's Place (rather that 6th's) may be said to be lying.
                                 </p>
                                 <hr />
                             </div>
@@ -701,7 +691,7 @@
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 An instruction to replace Change(s) from a Method with different Change(s), change the
-                                current Method to a different one, or exchange Cover Bell(s).
+                                current Method to a different one, or affect Cover Bell(s).
                             </p>
                             <div class="collapse" id="detailF1">
                                 <hr />
@@ -718,16 +708,17 @@
                                     When a Call adds or removes Changes to or from a Method, these Changes are respectively added to or subtracted from
                                     the count of Changes for that Method that is used for Performance Reporting purposes.
                                 </p>
+                                <p class="text-primary">
+                                    A Call may operate on Cover Bells to produce variable cover ringing.  In the example in E.1 above, the Doubles Change "3" when used
+                                    with a Cover Bell in 6th's Place may be deemed to be the Change "36".  A Call might replace this "36" Change with "34",
+                                    causing the bells in 5th's and 6th's Places to swap, and therefore changing the bell that is the Cover Bell for subsequent Rows.
+                                </p>
+
                                 <hr />
                                 <p class="text-muted">
-                                    <b>Technical comments:</b> More formally, a Call is an instruction to replace zero or more Changes from one or
-                                    more Methods with a different set of zero or more Changes, or to change the current Method(s) to other Method(s).
-                                    Calls may also operate on Cover Bell(s) to produce variable cover ringing.
-                                </p>
-                                <p class="text-muted">
-                                    When a Call affects the Changes of more than one Method (i.e. in spliced), the
-                                    Composition should make clear how the Change count of each Method is affected
-                                    in order to enable accurate Performance Reporting.
+                                    <b>Technical comments:</b> When a Call affects the Changes of more than one Method (i.e. in spliced), the
+                                    Composition (see Section 3.G) should make clear how the Change count of each Method is affected
+                                    in order to enable accurate Performance Reporting (see Section 6).
                                 </p>
                                 <hr />
                             </div>
@@ -761,8 +752,8 @@
                             <div class="collapse" id="detailG1">
                                 <hr />
                                 <p class="text-primary">
-                                    <b>Further explanation:</b> In addition to using a Method's whole sequence of Changes in a Composition,
-                                    any subset of a Method's sequence of Changes may also be used.
+                                    <b>Further explanation:</b> In addition to using a Method's whole sequence of Changes one or more times
+                                    in a Composition, any subset of a Method's sequence of Changes may also be used.
                                 </p>
 
                                 <p class="text-primary">
@@ -781,50 +772,81 @@
                                 </p>
 
                                 <p class="text-muted">
-                                	A Composition may also specify Changes that produce one or more Cover Bells. For example, if a Composition's Calls
-                                	affect a Cover Bell, or if a Composition uses Methods of more than one Stage and Cover Bells are used when at the lower
-                                	Stage(s), the Composition's Changes will include producing Cover Bells.
+                                	A Composition's Changes may also produce one or more Cover Bells. For example, if a Composition's Calls
+                                	affect a Cover Bell, or if a Composition uses Methods of more than one Stage and Cover Bell(s) are used when at the lower
+                                	Stage(s), the Composition's Changes will include the transpositions that produce the Cover Bell(s).
                                 </p>
                                 	
                                 <p class="text-muted">
                                     A Composition normally does not specify exterior Cover Bells that are fixed throughout (for example, a Composition of
-                                    Grandsire Caters doesn't specify that the tenor is always in 10th's place).
+                                    Grandsire Caters doesn't specify that the tenor is always in 10th's place).  These Cover Bells arise by applying a
+                                    composition at one Stage to Rows of a higher Stage, as described in Section 3.E.
                                     However, in certain cases, such as a Composition with a Doubles Method in Places 1 to 5, a fixed Cover Bell in 6th's place,
-                                    and a Minor Method in Places 7 to 12, the Composition may specify fixed Cover Bells, such that in this example, the Composition produces Maximus Changes.
+                                    and a Minor Method in Places 7 to 12, the Composition may specify fixed Cover Bells, such that in this example, the Composition
+                                    produces Changes with a Stage of Maximus, and each of these Changes includes the place notation "6".
                                 </p>
                                 <hr />
                             </div>
                         </div>
                     </div>
 
-                    <!-- Rowsequences -->
+                    <!-- Sequences of Rows -->
                     <div class="row" id="rowsequences">
                         <div class="col-sm-1">
                         	<h5>H.</h5>
                         </div>
                         <div class="col-sm-11">
-                        	<h5 class="border-bottom">Rowsequences</h5>
+                        	<h5 class="border-bottom">Sequences of Rows</h5>
                         </div>
                     </div>
-                    
+					
+					<div class="row">
+                        <div class="col-sm-1">
+                        </div>
+                        <div class="col-sm-11">
+                            <p>
+                                As further explained in H.1 below, a sequence of Rows is produced, starting from an initial Row, by applying a sequence of Changes.
+                                Because of the close connection between sequences of Changes and sequences of Rows, method ringing hasn't evolved terminology that
+                                clearly distinguishes between the two.
+                                While the definitions above for Methods, Calls and Compositions relate just to sequences of Changes,
+                                many of the terms used in this section can refer either to sequences of Changes, or to the sequences of Rows that result from applying these sequences of Changes.
+                                For the purposes of this framework, the terms below are used to refer solely to sequences of Rows.
+                                However, this does not in any way preclude their use to refer to sequences of Changes in other contexts.
+                            </p>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-sm-1">
                         	1.
                         </div>
                         <div class="col-xl-2 col-sm-3">
-                            Rowsequence
+                            Block
                             <span class="float-right">
                                 <a class="text-success more collapsed" data-toggle="collapse" href="#detailH1"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A sequence of Rows, all with the same Stage.
+                                A sequence of Rows, all with the same Stage, that is produced, starting from an initial Row, by applying a sequence of Changes.
                             </p>
                             <div class="collapse" id="detailH1">
                                 <hr />
                                 <p class="text-primary">
-                                    <b>Further explanation:</b> A Rowsequence has the Stage of its constituent Rows.
+                                    <b>Further explanation:</b> A Block has the Stage of its constituent Rows.
+                                </p>
+
+                                <p class="text-primary">
+                                    A sequence of Changes is used to produce a sequence of Rows as follows:<br/>
+                                    - Apply the first Change in the sequence to an initial Row to produce a second Row.<br/>
+                                    - Then apply the second Change in the sequence to the second Row to produce a third Row.<br/>
+                                    - Then apply the third Change in the sequence to the third Row to produce a fourth Row, and so on.<br/>
+                                    - The Row that is produced by applying the final Change in the sequence is referred to as the final Row.
+                                </p>
+
+								<p class="text-primary">
+                                    If the Stage of the Rows is higher than the stage of Changes being applied, all bell(s) in a Row that are not operated
+                                    on by a Change remain in the same Place in the next Row, and are Cover Bell(s).
                                 </p>
                                 <hr />
                             </div>
@@ -836,11 +858,11 @@
                         	2.
                         </div>
                         <div class="col-xl-2 col-sm-3">
-                            Lead
+                            Plain Lead
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Rowsequence that is produced, starting from an inital Row, by applying a Method's sequence of Changes once.
+                                A Block that is produced by applying a Method's sequence of Changes once, with no calls used.
                             </p>
                         </div>
                     </div>
@@ -854,8 +876,8 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Rowsequence that is produced, starting from Rounds, by applying a Method's sequence of Changes repeatedly
-                                until the final Row in the Rowsequence is Rounds.
+                                A Block that is produced by applying a Method's sequence of Changes repeatedly, with no calls used,
+                                until the final Row in the Block is the same as the initial Row used.
                             </p>
                         </div>
                     </div>
@@ -872,13 +894,12 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Rowsequence that is produced, starting from an initial Row, by applying a Compositions's sequence of Changes once.
-                                The Rowsequence may optionally be augmented by adding one or more fixed Cover Bells.
+                                A Block that is produced by applying a Compositions's sequence of Changes once.
                             </p>
                             <div class="collapse" id="detailH4">
                                 <hr />
                                 <p class="text-primary">
-                                    <b>Further explanation:</b> Note that while Lead and Plain Course are defined above in terms of a Method,
+                                    <b>Further explanation:</b> Note that while Plain Lead and Plain Course are defined above in terms of a Method,
                                     they could also be defined in terms of a Composition, where the Composition uses a single Method and doesn't use any Calls.
                                 </p>
                                 <hr />
@@ -895,7 +916,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                The number of Changes used to produce a Rowsequence.
+                                The number of Changes used to produce a Block.
                             </p>
                         </div>
                     </div>
@@ -1024,7 +1045,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A given Place that, in every Row of a Rowsequence, is occupied by the by the same Cover Bell.
+                                A given Place that, in every Row of a Block, is occupied by the by the same Cover Bell.
                             </p>
                         </div>
                     </div>
@@ -1038,7 +1059,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                The Stage of a Rowsequence after any Fixed Cover Places have been removed.
+                                The Stage of a Block after any Fixed Cover Places have been removed.
                             </p>
                         </div>
                     </div>
@@ -1052,10 +1073,18 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Rowsequence is True if, after removing any Fixed Cover Places, it contains zero or more Extents,
+                                A Block is True if, after removing any Fixed Cover Places, it contain zero or more Extents,
                                 and any further Rows are distinct.
-                                If the initial Row of a Rowset is the same as its final Row, the final Row is ignored when determining whether the Rowset is True.
+                                If the initial Row of a Block is the same as its final Row, the final Row is ignored when determining whether the Block is True.
                             </p>
+
+                            <p>
+                                A Block is also True if:<br/>
+                                (1) The Block can be subdivided into (a) Rows that have an effective Stage of n, and (b) Rows that have an effective Stage of n-1;<br/>
+                                (2) The Rows in (a) are True when considered in isolation, and the Rows in (b) are True when considered in isolation (using the definition of True above); and<br/>
+                                (3) The Rows in (a) comprise at least one Extent.
+                            </p>
+
                         </div>
                     </div>
 
