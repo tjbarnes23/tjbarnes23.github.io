@@ -490,7 +490,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A specified sequence of Changes, all with the same Stage.
+                                A sequence of Changes all of the same Stage, or a process to generate such a sequence.
                             </p>
                             <div class="collapse" id="detailD1">
                                 <hr />
@@ -602,7 +602,7 @@
                             <div class="collapse" id="detailD4">
                                 <hr />
                                 <p class="text-danger">
-                                    <b>Example:</b> The Method Plain Bob Minimus has the Changes -14-14-14-12. The Method
+                                    <b>Example:</b> The Method Plain Bob Minimus has the Changes -14-14-14-12. The Static Method
                                     with the Changes -14-12-14-14 is a Rotation of Plain Bob Minimus.
                                 </p>
                                 <hr />
@@ -612,10 +612,10 @@
                                 </p>
                                 <hr />
                                 <p class="text-muted">
-                                    <b>Technical comments:</b> When using a Method's sequence of Changes to produce Rows, the Changes
+                                    <b>Technical comments:</b> When using a Static Method's sequence of Changes to produce Rows, the Changes
                                     may be used starting and/or finishing at any point in the sequence.  For this reason, a Rotation of
-                                    an existing Method is not usually separately named, because the same Changes can be produced
-                                    by starting and finishing the existing Method at a different point in its sequence of Changes.
+                                    an existing Static Method is not usually separately named, because the same Changes can be produced
+                                    by starting and finishing the existing Static Method at a different point in its sequence of Changes.
                                 </p>
                                 <hr />
                             </div>
@@ -655,7 +655,7 @@
                                 <p class="text-primary">
                                     <b>Further explanation:</b> A Cover Bell remains in the same Place from one Row to the next.
                                     In the example above, if the Doubles Change being applied to the Row has place notation "3",
-                                    the Change can also be deemed to be "36" to include the transposition of the Cover Bell to the new Row.
+                                    the Change can also be deemed to be the Minor Change "36" to include the transposition of the Cover Bell to the new Row.
                                 </p>
 
                                 <p class="text-primary">
@@ -710,7 +710,7 @@
                                 </p>
                                 <p class="text-primary">
                                     A Call may operate on Cover Bells to produce variable cover ringing.  In the example in E.1 above, the Doubles Change "3" when used
-                                    with a Cover Bell in 6th's Place may be deemed to be the Change "36".  A Call might replace this "36" Change with "34",
+                                    with a Cover Bell in 6th's Place may be deemed to be the Minor Change "36".  A Call might replace this "36" Change with "34",
                                     causing the bells in 5th's and 6th's Places to swap, and therefore changing the bell that is the Cover Bell for subsequent Rows.
                                 </p>
 
@@ -862,7 +862,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Block that is produced by applying a Method's sequence of Changes once, with no calls used.
+                                A Block that is produced by applying a Static Method's sequence of Changes once, with no calls used.
                             </p>
                         </div>
                     </div>
@@ -876,7 +876,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Block that is produced by applying a Method's sequence of Changes repeatedly, with no calls used,
+                                A Block that is produced by applying a Static Method's sequence of Changes repeatedly, with no calls used,
                                 until the final Row in the Block is the same as the initial Row used.
                             </p>
                         </div>
@@ -899,8 +899,9 @@
                             <div class="collapse" id="detailH4">
                                 <hr />
                                 <p class="text-primary">
-                                    <b>Further explanation:</b> Note that while Plain Lead and Plain Course are defined above in terms of a Method,
-                                    they could also be defined in terms of a Composition, where the Composition uses a single Method and doesn't use any Calls.
+                                    <b>Further explanation:</b> Note that while Plain Lead in H.2 above and Plain Course in H.3 above are defined in terms of a Static Method,
+                                    they could equally be defined in terms of a Composition, in the same way that Touch is.
+                                    In this case, the Compositions would use a single Static Method and wouldn't use any Calls.
                                 </p>
                                 <hr />
                             </div>
@@ -1080,9 +1081,9 @@
 
                             <p>
                                 A Block is also True if:<br/>
-                                (1) The Block can be subdivided into (a) Rows that have an effective Stage of n, and (b) Rows that have an effective Stage of n-1;<br/>
+                                (1) The Block can be subdivided into (a) Rows that have an Effective Stage of n, and (b) Rows that have an Effective Stage of n-1;<br/>
                                 (2) The Rows in (a) are True when considered in isolation, and the Rows in (b) are True when considered in isolation (using the definition of True above); and<br/>
-                                (3) The Rows in (a) comprise at least one Extent.
+                                (3) The Rows in (a) contain at least one Extent.
                             </p>
 
                         </div>
