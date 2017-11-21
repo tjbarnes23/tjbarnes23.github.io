@@ -69,7 +69,7 @@
                                 <a class="nav-link" href="#compositions">G. Compositions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#rowsequences">H. Rowsequences</a>
+                                <a class="nav-link" href="#blocks">H. Blocks</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#truth">I. Truth</a>
@@ -659,6 +659,14 @@
                                 </p>
 
                                 <p class="text-primary">
+                                    When a Change is applied to a Row that has a higher Stage than the Stage of the Change, it is necessary
+                                    to specify which Places in the Row the Change operates on.  In the example above, the Doubles Change
+                                    is applied to Places 1 to 5 so that 6th's Place in the Row contains a Cover Bell.  Alternatively, it could
+                                    be specified that the Doubles Change is applied to Places 2 to 6 so that 1st's Place in the Row
+                                    contains a Cover Bell.
+                                </p>
+
+                                <p class="text-primary">
                                     In a Row containing one or more Cover Bells, the numbering of the Places
                                     may be modified to exclude the Cover Bell(s). In the example above,
                                     the bell in 5th's Place (rather that 6th's) may be said to be lying.
@@ -790,33 +798,17 @@
                         </div>
                     </div>
 
-                    <!-- Sequences of Rows -->
-                    <div class="row" id="rowsequences">
+                    <!-- Blocks -->
+                    <div class="row" id="blocks">
                         <div class="col-sm-1">
                         	<h5>H.</h5>
                         </div>
                         <div class="col-sm-11">
-                        	<h5 class="border-bottom">Sequences of Rows</h5>
+                        	<h5 class="border-bottom">Blocks</h5>
                         </div>
                     </div>
 					
 					<div class="row">
-                        <div class="col-sm-1">
-                        </div>
-                        <div class="col-sm-11">
-                            <p>
-                                As further explained in H.1 below, a sequence of Rows is produced, starting from an initial Row, by applying a sequence of Changes.
-                                Because of the close connection between sequences of Changes and sequences of Rows, method ringing hasn't evolved terminology that
-                                clearly distinguishes between the two.
-                                While the definitions above for Methods, Calls and Compositions relate just to sequences of Changes,
-                                many of the terms used in this section can refer either to sequences of Changes, or to the sequences of Rows that result from applying these sequences of Changes.
-                                For the purposes of this framework, the terms below are used to refer solely to sequences of Rows.
-                                However, this does not in any way preclude their use to refer to sequences of Changes in other contexts.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row">
                         <div class="col-sm-1">
                         	1.
                         </div>
@@ -828,7 +820,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A sequence of Rows, all with the same Stage, that is produced, starting from an initial Row, by applying a sequence of Changes.
+                                A sequence of Changes, all with the same Stage, and the Rows produced by applying the Changes, starting from an initial Row.
                             </p>
                             <div class="collapse" id="detailH1">
                                 <hr />
@@ -843,11 +835,6 @@
                                     - Then apply the third Change in the sequence to the third Row to produce a fourth Row, and so on.<br/>
                                     - The Row that is produced by applying the final Change in the sequence is referred to as the final Row.
                                 </p>
-
-								<p class="text-primary">
-                                    If the Stage of the Rows is higher than the stage of Changes being applied, all bell(s) in a Row that are not operated
-                                    on by a Change remain in the same Place in the next Row, and are Cover Bell(s).
-                                </p>
                                 <hr />
                             </div>
                         </div>
@@ -855,7 +842,21 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                        	2.
+                            2.
+                        </div>
+                        <div class="col-xl-2 col-sm-3">
+                            Round Block
+                        </div>
+                        <div class="col-xl-9 col-sm-8">
+                            <p>
+                                A Block whose final Row is the same as its initial Row.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-1">
+                        	3.
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Plain Lead
@@ -869,7 +870,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                        	3.
+                        	4.
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Plain Course
@@ -877,14 +878,14 @@
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Block that is produced by applying a Static Method's sequence of Changes repeatedly, with no calls used,
-                                until the final Row in the Block is the same as the initial Row used.
+                                until a Round Block is produced.
                             </p>
                         </div>
                     </div>
 
 					<div class="row">
                         <div class="col-sm-1">
-                        	4.
+                        	5.
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Touch
@@ -899,9 +900,10 @@
                             <div class="collapse" id="detailH4">
                                 <hr />
                                 <p class="text-primary">
-                                    <b>Further explanation:</b> Note that while Plain Lead in H.2 above and Plain Course in H.3 above are defined in terms of a Static Method,
+                                    <b>Further explanation:</b> Note that while Plain Lead in H.3 above and Plain Course in H.4 above are defined in terms of a Static Method,
                                     they could equally be defined in terms of a Composition, in the same way that Touch is.
                                     In this case, the Compositions would use a single Static Method and wouldn't use any Calls.
+                                    A Plain Lead and a Plain Course are therefore both also Touches.
                                 </p>
                                 <hr />
                             </div>
@@ -910,21 +912,21 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                        	5.
+                        	6.
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Length
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                The number of Changes used to produce a Block.
+                                The number of Changes in a Touch.
                             </p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col-sm-1">
-                        	6.
+                        	7.
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Short Touch
@@ -938,7 +940,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                        	7.
+                        	8.
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Quarter Peal
@@ -952,7 +954,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                        	8.
+                        	9.
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Half Peal
@@ -966,7 +968,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                        	9.
+                        	10.
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Peal
@@ -980,7 +982,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                        	10.
+                        	11.
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Long Length
@@ -1004,7 +1006,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                        	11.
+                        	12.
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Date Touch
@@ -1046,7 +1048,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A given Place that, in every Row of a Block, is occupied by the by the same Cover Bell.
+                                A given Place that, in every Row of a Touch, is occupied by the by the same Cover Bell.
                             </p>
                         </div>
                     </div>
@@ -1060,7 +1062,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                The Stage of a Block after any Fixed Cover Places have been removed.
+                                The Stage of a Touch after any Fixed Cover Places have been removed.
                             </p>
                         </div>
                     </div>
@@ -1074,15 +1076,17 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Block is True if, after removing any Fixed Cover Places, it contain zero or more Extents,
+                                A Touch is True if, after removing any Fixed Cover Places, it contain zero or more Extents,
                                 and any further Rows are distinct.
-                                If the initial Row of a Block is the same as its final Row, the final Row is ignored when determining whether the Block is True.
+                                If a Touch is a Round Block, the final Row is ignored when determining whether the Touch is True.
                             </p>
 
                             <p>
-                                A Block is also True if:<br/>
-                                (1) The Block can be subdivided into (a) Rows that have an Effective Stage of n, and (b) Rows that have an Effective Stage of n-1;<br/>
-                                (2) The Rows in (a) are True when considered in isolation, and the Rows in (b) are True when considered in isolation (using the definition of True above); and<br/>
+                                A Touch is also True if:<br/>
+                                (1) The Touch comprises (a) Round Block(s) that have an Effective Stage of n,
+                                and (b) Round Block(s) that have an Effective Stage of n-1;<br/>
+                                (2) The Rows in (a) are True when considered in isolation,
+                                and the Rows in (b) are True when considered in isolation (using the definition of True above); and<br/>
                                 (3) The Rows in (a) contain at least one Extent.
                             </p>
 
