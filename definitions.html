@@ -72,7 +72,7 @@
                                 <a class="nav-link" href="#compositions">H. Compositions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#namedblocks">I. Named Blocks</a>
+                                <a class="nav-link" href="#touches">I. Touches</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#truth">J. Truth</a>
@@ -499,7 +499,7 @@
 
                                 <p class="text-primary">
                                     When a Change is applied to a Row that has a higher Stage than the Stage of the Change, the
-                                    Change always operates on a set of bells that are in adjacent Places within the Row.
+                                    Change always operates on a set of bells that are in contiguous Places within the Row.
                                     In the case of a Doubles Change applied to a Minor Row, the Cover Bell can therefore only be in
                                     either 6th's Place or 1st's Place.
                                 </p>
@@ -557,7 +557,7 @@
                                     <b>Example:</b>
                                 </p>
                                 <p>
-                             		<img src="images\block.svg" width=250 height=155>	
+                             		<img src="images\block.svg" width=250 height=150>	
                              	</p>
 
                                 <hr />
@@ -573,6 +573,12 @@
                                     - The Row that is produced by applying the final Change in the sequence is referred to as the final Row.
                                 </p>
                                 
+                                 <p class="text-primary">
+                                	Dividing lines are often drawn in Blocks, such as those shown over the initial and final Rows in the example above.
+                                	Dividing lines have no effect on the Rows produced -- they are merely to highlight features of a Block.
+                                	In this example, the dividing lines highlight that the treble moves in a symmetrical pattern
+                                	in the Block.
+                                </p>
                                 <hr />
                             </div>
                         </div>
@@ -598,7 +604,7 @@
                                     <b>Example:</b>
                                 </p>
                                 <p>
-                             		<img src="images\roundblock.svg" width=225 height=155>	
+                             		<img src="images\roundblock.svg" width=225 height=150>	
                              	</p>
 
                                 <hr />
@@ -748,16 +754,11 @@
                                     this Method, starting from Rounds, is therefore:
                                 </p>
                                 <p>
-                             		<img src="images\plainlead.svg" width=225 height=85>	
+                             		<img src="images\plainlead.svg" width=225 height=80>	
                              	</p>
 
                                 <hr />
-                                <p class="text-muted">
-                                	<b>Technical comments:</b> While Plain Lead is defined above in terms of a Static Method,
-                                	this term may also be applicable to some Dynamic Methods.
-                                </p>
                                 
-                                <hr />
                             </div>
                         </div>
                     </div>
@@ -793,21 +794,17 @@
                                     produce a Round Block, the Plain Course of Bastow Little Bob Minimus therefore comprises three Plain Leads.
                                 </p>
                                 <p class="text-primary">
-                                	Note that the dividing lines in this example have been drawn a Row earlier than in previous examples.
-                                	The dividing lines have no effect on the Rows produced -- they are merely to highlight features of a Block.
-                                	In this example, the dividing lines highlight that the treble moves through the same, symmetrical pattern
-                                	of Places in every Plain Lead.
-                                </p>
-                                <p class="text-primary">
                                 	A Plain Course of a Method is a commonly rung Block in method ringing.  Unless otherwise specified,
                                 	a Plain Course is started from Rounds.  A Plain Course starting from Rounds is often referred
-                                	to as <b><i>The</i></b> Plain Course, whereas starting from any other Row might be referred to as <b><i>A</i></b> Plain Course.
+                                	to as <i>The</i> Plain Course, whereas starting from any other Row might be referred to as <i>A</i> Plain Course.
                                 </p>
 
                                 <hr />
                                 <p class="text-muted">
-                                	<b>Technical comments:</b> While Plain Course is defined above in terms of a Static Method,
-                                	this term may also be applicable to some Dynamic Methods.
+                                	<b>Technical comments:</b> While Plain Lead and Plain Course are defined above in terms of a Static Method,
+                                	these terms may also be applicable to some Dynamic Methods.  For example, in Dixon's Bob Minor
+                                	with Rounds as the initial Row, Rounds comes up again after 64 Changes (with no Calls).
+                                	This would be considered the Plain Course of Dixon's.
                                 </p>
 
                                 <hr />
@@ -987,17 +984,15 @@
                         </div>
                     </div>
 
-                    <!-- Named Blocks -->
-                    <div class="row" id="blocks">
+                    <!-- Touches -->
+                    <div class="row" id="touches">
                         <div class="col-sm-1">
                         	<h5>I.</h5>
                         </div>
                         <div class="col-sm-11">
-                        	<h5 class="border-bottom">Named Blocks</h5>
+                        	<h5 class="border-bottom">Touches</h5>
                         </div>
                     </div>
-					
-					
 
 					<div class="row">
                         <div class="col-sm-1">
@@ -1030,11 +1025,22 @@
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Length
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailI2"></a>
+                            </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 The number of Changes in a Touch.
                             </p>
+                            <div class="collapse" id="detailI2">
+                                <hr />
+                                <p class="text-muted">
+                                    <b>Technical comments:</b> If a Touch uses side by side Changes to produce a single Row, only one Change
+                                    per Row is counted when determining Length.
+                                </p>
+                                <hr />
+                            </div>
                         </div>
                     </div>
 
@@ -1195,7 +1201,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A given Place that, in every Row of a Touch, is occupied by the by the same Cover Bell.
+                                A given Place that, in every Row of a Touch, is occupied by the same bell.
                             </p>
                         </div>
                     </div>
@@ -1205,39 +1211,25 @@
                         	3.
                         </div>
                         <div class="col-xl-2 col-sm-3">
-                            Effective Stage
-                        </div>
-                        <div class="col-xl-9 col-sm-8">
-                            <p>
-                                The Stage of a Touch after any Fixed Cover Places have been removed.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-1">
-                        	4.
-                        </div>
-                        <div class="col-xl-2 col-sm-3">
                             True
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailJ4"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailJ3"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Touch is True if it contain zero or more Extents at the Touch's Effective Stage,
-                                and any further Rows are distinct.
-                                If a Touch is a Round Block, the final Row is ignored when determining whether the Touch is True.
+                                A Touch is True if, after excluding all Fixed Cover Places, it contain zero or more Extents
+                                and any further Rows are distinct.<br/>
+                                If a Touch is a Round Block, the final Row is excluded when determining whether the Touch is True.
                             </p>
-                            <div class="collapse" id="detailJ4">
+                            <div class="collapse" id="detailJ3">
                                 <hr />
                                 <p class="text-primary">
                                     <b>Futher explanation:</b> When ringing a Touch, it is traditional to ring the initial Row (usually Rounds) several times before starting the Changes, and similarly to ring the final Row several times before standing
-                                    the bells. These Rows (shown shaded in the diagram below) are excluded when determining Truth.
+                                    the bells. These Rows (shown in the diagram below) are excluded when determining Truth.
                                 </p>
                                 <p>
-                             		<img src="images\openingclosingrounds.svg" width=300 height=370>	
+                             		<img src="images\openingclosingrounds.svg" width=400 height=450>	
                              	</p>
 
                                 <hr />
