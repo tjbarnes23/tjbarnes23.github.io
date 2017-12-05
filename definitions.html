@@ -57,19 +57,19 @@
                                 <a class="nav-link" href="#changes">C. Changes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#coverbells">D. Cover Bells</a>
+                                <a class="nav-link" href="#blocks">D. Blocks</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#blocks">E. Blocks</a>
+                                <a class="nav-link" href="#methods">E. Methods</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#methods">F. Methods</a>
+                                <a class="nav-link" href="#calls">F. Calls</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#calls">G. Calls</a>
+                                <a class="nav-link" href="#compositions">G. Compositions</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#compositions">H. Compositions</a>
+                                <a class="nav-link" href="#coverbells">H. Cover Bells</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#touches">I. Touches</a>
@@ -446,97 +446,10 @@
                         </div>
                     </div>
 
-                    <!-- Cover Bells -->
-                    <div class="row" id="coverbells">
-                        <div class="col-sm-1">
-                        	<h5>D.</h5>
-                        </div>
-                        <div class="col-sm-11">
-                        	<h5 class="border-bottom">Cover Bells</h5>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-1">1.</div>
-                        <div class="col-xl-2 col-sm-3">
-                            Cover Bell
-                            <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD1"></a>
-                            </span>
-                        </div>
-                        <div class="col-xl-9 col-sm-8">
-                            <p>
-                                A bell that occupies a Place in a Row that is not one of the Places operated on by the
-                                Change(s) applied to that Row.
-                            </p>
-                            <div class="collapse" id="detailD1">
-                                <hr />
-                                <p class="text-danger">
-                                    <b>Example:</b> A Doubles Change is applied to a Minor Row, where the Change operates on
-                                    Places 1 to 5.  6th's Place therefore contains a Cover Bell (usually the tenor).
-                                </p>
-                                <hr />
-                                <p class="text-primary">
-                                    <b>Further explanation:</b> A Change of a given Stage can be applied either to a Row with the same Stage or to a Row with a higher Stage.
-                                    When the Stage of a Row is higher than the Stage of a Change being applied to it, any Places not operated on by the Change contain Cover Bells.
-                                </p>
-                                <p class="text-primary">
-                                    A Cover Bell remains in the same Place from one Row to the next.
-                                    In the example above, if the Doubles Change being applied to the Row has place notation "3",
-                                    the Change can also be deemed to be the Minor Change "36" to include the transposition of the Cover Bell to the new Row.
-                                </p>
-                                <p>
-                             		<img src="images\coverbell.svg" width=100 height=90>	
-                             	</p>
-                                <p class="text-primary">
-                                    When a Change is applied to a Row that has a higher Stage than the Stage of the Change, it is necessary
-                                    to indicate which Places in the Row the Change operates on.  In the example above, the Doubles Change
-                                    is applied to Places 1 to 5 so that 6th's Place in the Row contains a Cover Bell.
-                                    The tenor as Cover Bell is the usual implementation when the Stage of a Row is one higher
-                                    than the Stage of a Change.
-                                    However, it could be specified that the Doubles Change is applied to Places 2 to 6 so that 1st's Place
-                                    in the Row contains a Cover Bell.
-                                </p>
-
-                                <p class="text-primary">
-                                    When a Change is applied to a Row that has a higher Stage than the Stage of the Change, the
-                                    Change always operates on a set of bells that are in contiguous Places within the Row.
-                                    In the case of a Doubles Change applied to a Minor Row, the Cover Bell can therefore only be in
-                                    either 6th's Place or 1st's Place.
-                                </p>
-
-                                <p class="text-primary">
-                                    In a Row containing one or more Cover Bells, the numbering of the Places
-                                    may be modified to exclude the Cover Bell(s). In the example above,
-                                    the bell in 5th's Place (rather that 6th's) may be said to be lying.
-                                </p>
-                                <hr />
-
-                                <p class="text-muted">
-                                    <b>Technical comments:</b> As covered in more detail below under Compositions, it is possible to apply
-                                    two or more Changes to the same Row.  The sum of the Stages of the Changes cannot exceed the
-                                    Stage of the Row.  
-                                </p>
-
-                                <p class="text-muted">
-                                	For example, a Doubles Change could be applied to Places 1 to 5 of a Maximus Row, and a Minor Change
-                                	could be applied to Places 7 to 12 of the same Row.  6th's Place does not have any Changes operating
-                                	on it, and therefore 6th's Place contains a Cover Bell.
-                                </p>
-
-                                <p class="text-muted">
-                                	When two or more Changes are applied in this side-by-side manner to an existing Row, the resulting new Row
-                                	has the same Stage as the existing Row.
-                                </p>
-                                <hr />
-                            </div>
-                        </div>
-                    </div>
-                    
 					<!-- Blocks -->
                     <div class="row" id="blocks">
                         <div class="col-sm-1">
-                        	<h5>E.</h5>
+                        	<h5>D.</h5>
                         </div>
                         <div class="col-sm-11">
                         	<h5 class="border-bottom">Blocks</h5>
@@ -550,14 +463,14 @@
                         <div class="col-xl-2 col-sm-3">
                             Block
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailE1"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD1"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A sequence of Changes, all with the same Stage, and the Rows produced by applying these Changes, starting from an initial Row.
                             </p>
-                            <div class="collapse" id="detailE1">
+                            <div class="collapse" id="detailD1">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -597,14 +510,14 @@
                         <div class="col-xl-2 col-sm-3">
                             Round Block
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailE2"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD2"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Block whose final Row is the same as its initial Row.
                             </p>
-                            <div class="collapse" id="detailE2">
+                            <div class="collapse" id="detailD2">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -627,7 +540,7 @@
                     <!-- Methods -->
                     <div class="row" id="methods">
                         <div class="col-sm-1"><h5>
-                        	F.
+                        	E.
                         </h5></div>
                         <div class="col-sm-11">
                         	<h5 class="border-bottom">Methods</h5>
@@ -641,14 +554,14 @@
                         <div class="col-xl-2 col-sm-3">
                             Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailF1"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailE1"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A sequence of Changes all of the same Stage, or a process to generate such a sequence.
                             </p>
-                            <div class="collapse" id="detailF1">
+                            <div class="collapse" id="detailE1">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b> The sequence of Changes x16x14x16x12 is the Method that has been given the name Little Bob Minor.
@@ -680,14 +593,14 @@
                         <div class="col-xl-2 col-sm-3">
                             Static Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailF2"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailE2"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Method whose sequence of Changes is fixed and finite.
                             </p>
-                            <div class="collapse" id="detailF2">
+                            <div class="collapse" id="detailE2">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b> x16x14x16x12 (Little Bob Minor) is an example of a Static Method.
@@ -709,14 +622,14 @@
                         <div class="col-xl-2 col-sm-3">
                             Dynamic Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailF3"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailE3"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Method whose sequence of Changes is not fixed or is not finite.
                             </p>
-                            <div class="collapse" id="detailF3">
+                            <div class="collapse" id="detailE3">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b> Dixon's Bob Minor.
@@ -746,14 +659,14 @@
                         <div class="col-xl-2 col-sm-3">
                             Plain Lead
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailF4"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailE4"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Block that is produced by applying a Static Method's sequence of Changes once, with no Calls used.
                             </p>
-                            <div class="collapse" id="detailF4">
+                            <div class="collapse" id="detailE4">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b> Bastow Little Bob Minimus has the sequence of Changes x12x14.  A Plain Lead of
@@ -765,7 +678,7 @@
 
 								<hr />
                              	<p class="text-primary">
-                                    <b>Further explanation:</b> Calls are covered below in Section G.
+                                    <b>Further explanation:</b> Calls are covered below in Section F.
                                 </p>
                                 
                                 <hr />
@@ -780,7 +693,7 @@
                         <div class="col-xl-2 col-sm-3">
                             Plain Course
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailF5"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailE5"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
@@ -788,7 +701,7 @@
                                 A Block that is produced by applying a Static Method's sequence of Changes repeatedly, with no Calls used,
                                 until a Round Block is produced.
                             </p>
-                            <div class="collapse" id="detailF5">
+                            <div class="collapse" id="detailE5">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b> Bastow Little Bob Minimus has the sequence of Changes x12x14.  A Plain Course of
@@ -800,7 +713,7 @@
 
                                 <hr />
                                 <p class="text-primary">
-                                    <b>Further explanation:</b> Calls are covered below in Section G.
+                                    <b>Further explanation:</b> Calls are covered below in Section F.
                                 </p>
                                 <p class="text-primary">
                                     Since it takes three applications of the Method's sequence of Changes to
@@ -809,7 +722,7 @@
                                 <p class="text-primary">
                                 	A Plain Course of a Method is a commonly used Block in method ringing.  Unless otherwise specified,
                                 	a Plain Course is started from Rounds.  A Plain Course starting from Rounds is often referred
-                                	to as <i>The</i> Plain Course, whereas starting from any other Row might be referred to as <i>A</i> Plain Course.
+                                	to as <i>The</i> Plain Course of a Method, whereas starting from any other Row might be referred to as <i>A</i> Plain Course.
                                 </p>
 
                                 <hr />
@@ -832,7 +745,7 @@
                         <div class="col-xl-2 col-sm-3">
                             Rotation
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailF6"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailE6"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
@@ -841,7 +754,7 @@
                                 that the Changes, when considered as a cycle, start at a
                                 different point in the cycle.
                             </p>
-                            <div class="collapse" id="detailF6">
+                            <div class="collapse" id="detailE6">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b> The Method Plain Bob Minimus has the Changes x14x14x14x12. The Static Method
@@ -850,7 +763,8 @@
                                 <hr />
                                 <p class="text-primary">
                                     <b>Further explanation:</b> More fully, this term would be 'Method Rotation' to distinguish
-                                    it from other uses of rotation in method ringing, such as a rotated Composition.
+                                    it from other uses of rotation in method ringing, such as a rotated Block
+                                    or a rotated Composition (Compositions are covered in Section G below).
                                 </p>
                                 <hr />
                                 <p class="text-muted">
@@ -867,7 +781,7 @@
                     <!-- Calls -->
                     <div class="row" id="calls">
                         <div class="col-sm-1">
-                        	<h5>G.</h5>
+                        	<h5>F.</h5>
                         </div>
                         <div class="col-sm-11">
                         	<h5 class="border-bottom">Calls</h5>
@@ -881,7 +795,7 @@
                         <div class="col-xl-2 col-sm-3">
                             Call
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailG1"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailF1"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
@@ -889,7 +803,7 @@
                                 An instruction to replace Change(s) from a Method with different Change(s), change the
                                 current Method to a different one, or affect Cover Bell(s).
                             </p>
-                            <div class="collapse" id="detailG1">
+                            <div class="collapse" id="detailF1">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b> The last Change in Little Bob Minor's sequence of Changes is '12'.  This is usually
@@ -898,24 +812,26 @@
                                 
                                 <hr />
                                 <p class="text-primary">
-                                    <b>Further explanation:</b> Most commonly a call replaces an individual Change with another, but a call may also
-                                    add Changes, remove Changes, or replace a set of Changes with a different set of Changes.
+                                    <b>Further explanation:</b> The application of Calls to changing the current Method to a different one
+                                    and to affecting Cover Bell(s) is covered in Sections G and H below.
                                 </p>
+
+                                <p class="text-primary">
+                                    In the application of Calls to replacing Change(s) from a Method with different Change(s),
+                                    a Call most commonly replaces an individual Change with another, as in the example above.
+                                    But a Call may also add Changes, remove Changes, or replace a set of Changes with a different set of Changes.
+                                </p>
+                                
                                 <p class="text-primary">
                                     When a Call adds or removes Changes to or from a Method, these Changes are respectively added to or subtracted from
                                     the count of Changes for that Method that is used for Performance Reporting purposes.
                                     Performance Reporting is covered in Section 6.
                                 </p>
-                                <p class="text-primary">
-                                    A Call may operate on Cover Bells to produce variable cover Blocks.  In the example in D.1 above, the Doubles Change "3" when used
-                                    with a Cover Bell in 6th's Place may be deemed to be the Minor Change "36".  A Call might replace this "36" Change with "34",
-                                    causing the bells in 5th's and 6th's Places to swap, and therefore changing the bell that is the Cover Bell for subsequent Rows if further Doubles Changes are applied to Places 1 to 5.
-                                </p>
-
+                                
                                 <hr />
                                 <p class="text-muted">
                                     <b>Technical comments:</b> When a Call affects the Changes of more than one Method (i.e. in spliced), the
-                                    Composition (see Section H below) should make clear how the Change count of each Method is affected
+                                    Composition (see Section G below) should make clear how the Change count of each Method is affected
                                     in order to enable accurate Performance Reporting (see Section 6).
                                 </p>
                                 
@@ -927,7 +843,7 @@
                     <!-- Compositions -->
                     <div class="row" id="compositions">
                         <div class="col-sm-1">
-                        	<h5>H.</h5>
+                        	<h5>G.</h5>
                         </div>
                         <div class="col-sm-11">
                         	<h5 class="border-bottom">Compositions</h5>
@@ -941,14 +857,14 @@
                         <div class="col-xl-2 col-sm-3">
                             Composition
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailH1"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailG1"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 An arrangement of Method(s) and Call(s) that produces a sequence of Changes, all with the same Stage.
                             </p>
-                            <div class="collapse" id="detailH1">
+                            <div class="collapse" id="detailG1">
                                 <hr />
                                 <p class="text-primary">
                                     <b>Further explanation:</b> A Composition has the Stage of the Changes it produces.
@@ -963,43 +879,123 @@
                                     In addition to using a Method's whole sequence of Changes one or more times
                                     in a Composition, any subset of a Method's sequence of Changes may also be used.
                                 </p>
+
+                                <p class="text-primary">
+                                    When a Composition that uses more than one Method is rung, the instruction to change from one Method to another is
+                                    referred to as a Call, and is another application of this term.
+                                </p>
+
                                 <hr />
                                 <p class="text-muted">
-                                    <b>Technical comments:</b> Since Cover Bells can be generated by applying a Composition of a given Stage
-                                    to Rows of a higher Stage, Compositions often do not need to specify the transposition of
-                                    Cover Bells.  However, since the Changes produced by a Composition are all of the same Stage,
-                                    it may sometimes be necessary for a Composition to include the transposition of Cover Bells in some or all Changes.
-                                </p>
-
-                                <p class="text-muted">
-                                    For example, if a Composition uses a Doubles Method to start with, applying to Places 1 to 5,
-                                    and then uses a Minor Method later, applying to Places 1 to 6, then the Composition's Changes are all specified
-                                    as Minor Changes, with a place notation of "6" added to all Doubles Changes.
-                                </p>
-
-                                <p class="text-muted">
-                                	Similarly, if a Composition uses a Doubles Method but is designed to be used with Minor Rows, and Calls
-                                	are included that occasionally exchange the Cover Bell, then the Composition's Changes are all specified
-                                    as Minor Changes, with a place notation of "6" added to all Changes where the Cover Bell is not affected.
-                                </p>
-
-                                <p class="text-muted">
-                                	Note that in the two examples above, as an alternative to applying the Compositions' Minor Changes
-                                	to Minor Rows, they could also, for example, be applied to Places 1 to 6 of Major Rows,
-                                	resulting in two additional Cover Bells in Places 7 and 8.
-								</p>                                	
-
-                                <p class="text-muted">
-                                	A Composition may use two or more Methods side by side to produce Changes with a higher Stage.
+                                	<b>Technical comments:</b> A Composition may use two or more Methods side by side to produce Changes with a higher Stage.
                                     For example, a Minor Method and a Doubles Method may be combined side by side to create a Composition that produces
                                     Cinques Changes.
                                     Similarly, a Composition may combine a Minor Composition and a Doubles Composition side by side to create
                                     a Composition that produces Cinques Changes.
                                 </p>
 
-                                <p class="text-muted">
-                                	A Composition might also result in an interior Cover Bell.  For example, a Composition might be designed to be used with Maximus Rows, and use a Doubles Method in Places 1 to 5, a Cover Bell in 6th's place, and a Minor Method in Places 7 to 12.  In this case, the Composition would produce Maximus Changes, and each Change would include the place notation "6".
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cover Bells -->
+                    <div class="row" id="coverbells">
+                        <div class="col-sm-1">
+                        	<h5>H.</h5>
+                        </div>
+                        <div class="col-sm-11">
+                        	<h5 class="border-bottom">Cover Bells</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-1">1.</div>
+                        <div class="col-xl-2 col-sm-3">
+                            Cover Bell
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailH1"></a>
+                            </span>
+                        </div>
+                        <div class="col-xl-9 col-sm-8">
+                            <p>
+                                A bell that occupies a Place in Rows that are not one of the Places operated on by the
+                                Composition applied to those Rows.
+                            </p>
+                            <div class="collapse" id="detailH1">
+                                <hr />
+                                <p class="text-danger">
+                                    <b>Example:</b> A Doubles Composition is used with Minor Rows, where the Composition operates on
+                                    Places 1 to 5.  6th's Place therefore contains a Cover Bell (usually the tenor).
                                 </p>
+                                <hr />
+                                <p class="text-primary">
+                                    <b>Further explanation:</b> A Composition of a given Stage can be applied either to Rows with the same Stage or to Rows with a higher Stage.
+                                    When the Stage of Rows is higher than the Stage of a Composition being applied to it, any Places not operated on by the Composition contain Cover Bells.
+                                </p>
+                                <p class="text-primary">
+                                    A Cover Bell remains in the same Place from one Row to the next.
+                                    In the example above, the Doubles Changes of the Composition can be deeemed to become Minor Changes with a place notation of "6"
+                                    added to each Change.
+                                </p>
+                                <p>
+                             		<img src="images\coverbell.svg" width=100 height=90>	
+                             	</p>
+                                <p class="text-primary">
+                                    When a Composition is applied to Rows that have a higher Stage than the Stage of the Composition, it is necessary
+                                    to indicate which Places in the Rows the Composition operates on.  In the example above, the Doubles Composition
+                                    is applied to Places 1 to 5 so that 6th's Place in the Rows contains a Cover Bell.
+                                    The tenor as Cover Bell is the usual implementation when the Stage of Rows is one higher
+                                    than the Stage of a Composition.
+                                    However, it could be specified that the Doubles Composition is applied to Places 2 to 6 so that 1st's Place
+                                    in the Rows contains a Cover Bell.
+                                </p>
+
+                                <p class="text-primary">
+                                    In a Row containing one or more Cover Bells, the numbering of the Places
+                                    may be modified to exclude the Cover Bell(s). In the example above,
+                                    the bell in 5th's Place (rather that 6th's) may be said to be lying.
+                                </p>
+
+                                <p class="text-primary">
+                                    A Composition may use Calls that operate on Cover Bells to produce variable cover Blocks.  In the example above,
+                                    the Doubles Composition might include a Method that has the Change with place notation "3".
+                                    This would be deemed to be the Change "36" when the Composition is used with Minor Rows.
+                                    The Composition might include a Call that replaces this "36" Change with "34", causing the bells in 5th's and 6th's Places to swap,
+                                    and therefore changing the bell that is the Cover Bell for subsequent Rows as further Doubles Changes from the Composition
+                                    are applied to Places 1 to 5.
+                                </p>
+                                
+								<p class="text-primary">
+                                    Since Cover Bells can be generated by applying a Composition of a given Stage
+                                    to Rows of a higher Stage, Compositions often do not need to specify the transposition of
+                                    Cover Bells.  However, since the Changes produced by a Composition are all of the same Stage,
+                                    it may sometimes be necessary for a Composition to include the transposition of Cover Bells in some or all Changes.
+                                </p>
+
+                                <p class="text-primary">
+                                    For example, if a Composition uses a Doubles Method initially, applying to Places 1 to 5,
+                                    and then switches to a Minor Method, applying to Places 1 to 6, then the Composition's Changes are all specified
+                                    as Minor Changes, with a place notation of "6" added to all Doubles Changes.
+                                </p>
+
+                                <p class="text-primary">
+                                	Similarly, if a Composition uses a Doubles Method but is designed to be used with Minor Rows, and Calls
+                                	are included that occasionally exchange the Cover Bell, then the Composition's Changes are all specified
+                                    as Minor Changes, with a place notation of "6" added to all Changes where the Cover Bell is not affected.
+                                </p>
+
+                                <hr />
+                                <p class="text-muted">
+                                    <b>Technical comments:</b> As discussed above under Compositions, it is possible for a Composition
+                                    to use two or more Methods side by side, or to use two or more Compositions side by side.
+                                    As a further variation, a Composition might also result in an interior Cover Bell.
+                                    For example, a Composition might be designed to be used with Maximus Rows, and use a Doubles Method in Places 1 to 5
+                                    and a Minor Method in Places 7 to 12.
+                                    6th's Place does not have any Methods operating on it, and therefore 6th's Place contains a Cover Bell.
+                                    In this case, the Composition would produce Maximus Changes, and each of its Changes would include the place notation "6".
+                                </p>
+
                                 <hr />
                             </div>
                         </div>
@@ -1232,18 +1228,32 @@
                         	3.
                         </div>
                         <div class="col-xl-2 col-sm-3">
+                            Effective Stage
+                        </div>
+                        <div class="col-xl-9 col-sm-8">
+                            <p>
+                                The Stage of a Touch after any Fixed Cover Places are excluded.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-1">
+                        	4.
+                        </div>
+                        <div class="col-xl-2 col-sm-3">
                             True
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailJ3"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailJ4"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Touch is True if, after excluding all Fixed Cover Places, it contain zero or more Extents
+                                A Touch is True if it contain zero or more Extents at the Touch's Effective Stage,
                                 and any further Rows are distinct.<br/>
                                 If a Touch is a Round Block, the final Row is excluded when determining whether the Touch is True.
                             </p>
-                            <div class="collapse" id="detailJ3">
+                            <div class="collapse" id="detailJ4">
                                 <hr />
                                 <p class="text-primary">
                                     <b>Futher explanation:</b> When ringing a Touch, it is traditional to ring the initial Row (usually Rounds) several times before starting the Changes, and similarly to ring the final Row several times before standing
