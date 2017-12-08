@@ -27,9 +27,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-cccbr">
-            <a class="navbar-brand" href="https://cccbr.github.io/method_ringing_framework/ ">Framework for Method Ringing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-            <a class="navbar-brand" href="https://cccbr.org.uk/ "><img src="images/header_3.png" height="60" alt="CCCBR">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-            <div class="text-muted" style="font-size:35px;"><i>Draft: Version 1.4</i></div>
+	    	<a class="navbar-brand" href="index.html">Framework for Method Ringing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	    	<a class="navbar-brand" href="https://cccbr.org.uk/ "><img src="images/header_3.png" height="60" alt="CCCBR">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+	    	<img src="images\version.svg" width=250 height=45 />
         </nav>
     </header>
 
@@ -699,7 +699,7 @@
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Block that is produced by applying a Static Method's sequence of Changes repeatedly, with no Calls used,
-                                until a Round Block is produced.
+                                until a Round Block is obtained.
                             </p>
                             <div class="collapse" id="detailE5">
                                 <hr />
@@ -924,25 +924,21 @@
                             <div class="collapse" id="detailH1">
                                 <hr />
                                 <p class="text-danger">
-                                    <b>Example:</b> A Doubles Composition is used with Minor Rows, where the Composition operates on
-                                    Places 1 to 5.  6th's Place therefore contains a Cover Bell (usually the tenor).
+                                    <b>Example:</b> A Composition for a Doubles Method is used with an initial Row that has a Stage of Minor,
+                                    and this produces a Minor Block.
+                                    The Composition operates on Places 1 to 5.  6th's Place therefore contains a Cover Bell (usually the tenor).
                                 </p>
                                 <hr />
                                 <p class="text-primary">
-                                    <b>Further explanation:</b> A Composition of a given Stage can be applied either to Rows with the same Stage, or to Rows with a higher Stage.
-                                    When the Stage of the Rows is higher than the Stage of the Composition being applied, any Places not operated on by the Composition contain Cover Bells.
-                                </p>
-                                
-                                <p class="text-primary">
-                                    A Cover Bell remains in the same Place from one Row to the next.
-                                    In the example above, the Doubles Changes of the Composition can be deeemed to become Minor Changes with a place notation of "6"
+                                    <b>Further explanation:</b> A Cover Bell remains in the same Place from one Row to the next.
+                                    In the example above, the Doubles Changes of the Composition are deeemed to become Minor Changes with a place notation of "6"
                                     added to each Change.
                                 </p>
 
                                 <p>
                              		<img src="images\coverbell.svg" width=100 height=90>	
                              	</p>
-                                
+
                              	<p class="text-primary">
                                     In a Row containing one or more Cover Bells, the numbering of the Places
                                     may be modified to exclude the Cover Bell(s). In the example above,
@@ -950,20 +946,27 @@
                                 </p>
 
                                 <p class="text-primary">
-                                    When a Composition is applied to Rows that have a higher Stage than the Stage of the Composition, it is necessary
-                                    to indicate which Places in the Rows the Composition operates on.  In the example above, the Doubles Composition
-                                    is applied to Places 1 to 5 so that 6th's Place in the Rows contains a Cover Bell.
-                                    The tenor as Cover Bell is the usual implementation when the Stage of Rows is one higher
-                                    than the Stage of a Composition.
-                                    However, it could be specified that the Doubles Composition is applied to Places 2 to 6 so that 1st's Place
-                                    in the Rows contains a Cover Bell.
+                                    A Composition of a given Stage can be used to produce either a Block with the same Stage as the Composition,
+                                    or a Block with a higher Stage.
+                                    When the Stage of the Block is higher than the Stage of the Composition, any Places not operated on by the
+                                    Composition contain Cover Bells.
                                 </p>
 
                                 <p class="text-primary">
-                                    Since Cover Bells can be generated by applying a Composition of a given Stage
-                                    to Rows of a higher Stage, Compositions often do not need to specify the transposition of
-                                    Cover Bells.  However, since the Changes produced by a Composition are all of the same Stage,
-                                    there is another scenario where a Composition's Changes include the transposition of Cover Bells for some or all Changes.
+                                    When a Composition is used to produce a Block with a higher Stage than the Stage of the Composition, it is necessary
+                                    to indicate which Places the Composition operates on.  In the example above, the Doubles Composition
+                                    is applied to Places 1 to 5 so that 6th's Place contains a Cover Bell.
+                                    The tenor as Cover Bell is the usual implementation when the Stage of a Block is one higher
+                                    than the Stage of a Composition.
+                                    However, it could be specified that the Doubles Composition is applied to Places 2 to 6 so that 1st's Place
+                                    contains a Cover Bell.
+                                </p>
+
+                                <p class="text-primary">
+                                    Since Cover Bells can be generated by using a Composition of a given Stage to produce a
+                                    Block of a higher Stage, Compositions often do not need to specify the transposition of Cover Bells as these are inferred.
+                                    However, since the Changes produced by a Composition are all of the same Stage,
+                                    there is a second scenario where a Composition's Changes include the transposition of Cover Bells for some or all Changes.
                                 </p>
 
                                 <p class="text-primary">
@@ -973,10 +976,10 @@
                                 </p>
 
 								<p class="text-primary">
-                                	Similarly, a Composition might use a Doubles Method but is designed to be used with Minor Rows, and Calls
+                                	Similarly, a Composition might use a Doubles Method but is designed to produce a Minor Block, and Calls
                                 	are used that occasionally exchange the Cover Bell in 6th's Place.  In this case the Composition's Changes
                                 	are all specified as Minor Changes (so the Composition's Stage is Minor), with a place notation of "6" added to all Changes where the Cover Bell is not affected.
-                                	For example, if the underlying Doubles Method has a "3" Change, this becomes a "36" Change in the Composition. 
+                                	For example, if the Composition's Doubles Method has a "3" Change, this becomes a "36" Change in the Composition. 
                                 	Where the Cover Bell is affected by a Call, what otherwise might have been a "36" Change might instead become a "34" Change.
                                 </p>
 
@@ -985,7 +988,7 @@
                                     <b>Technical comments:</b> As discussed above under Compositions, it is possible for a Composition
                                     to use two or more Methods side by side, or to use two or more Compositions side by side.
                                     As a further variation, a Composition might also result in an interior Cover Bell.
-                                    For example, a Composition might be designed to be used with Maximus Rows, and use a Doubles Method in Places 1 to 5
+                                    For example, a Composition might be designed to be used with Maximus Rows, using a Doubles Method in Places 1 to 5
                                     and a Minor Method in Places 7 to 12.
                                     6th's Place does not have any Methods operating on it, and therefore 6th's Place contains a Cover Bell.
                                     In this case, the Composition would produce Maximus Changes (and therefore have a Stage of Maximus),
