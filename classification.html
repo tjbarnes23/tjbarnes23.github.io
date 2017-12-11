@@ -28,8 +28,8 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-cccbr">
             <a class="navbar-brand" href="index.html">Framework for Method Ringing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-            <a class="navbar-brand" href="https://cccbr.org.uk/ "><img src="images/header_3.png" height="60" alt="CCCBR">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-            <img src="images\version.svg" width=250 height=45 />
+            <a class="navbar-brand" href="https://cccbr.org.uk/ "><img src="images/cc-header.png" height="60" alt="CCCBR">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <img src="images\version.svg" width=200 height=36 />
         </nav>
     </header>
 
@@ -47,7 +47,7 @@
                         <a class="nav-link" href="definitions.html">3. Definitions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="methodclassification.html">4. Method Classification</a>
+                        <a class="nav-link active" href="classification.html">4. Method Classification</a>
                         <ul class="nav nav-pills flex-column nav-subsection">
                             <li class="nav-item">
                                 <a class="nav-link" href="#definitions">A. Definitions</a>
@@ -73,7 +73,7 @@
                         <a class="nav-link" href="requirements.html">5. Requirements</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="performancereporting.html">6. Performance Reporting</a>
+                        <a class="nav-link" href="reporting.html">6. Performance Reporting</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="exceptions.html">7. Exceptions</a>
@@ -82,6 +82,11 @@
                         <a class="nav-link" href="placenotation.html">8. Place Notation</a>
                     </li>
                 </ul>
+                <div class="btn-navbar">
+                    <button class="btn btn-sm btn-block btn-success open-button" type="button">Show all notes</button>
+                    <div class="text-success"><small>Click + to show a note.</small></div>
+                    <button class="btn btn-sm btn-block  btn-success close-button" type="button">Hide all notes</button>
+                </div>
             </nav>
 
             <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
@@ -134,7 +139,7 @@
                                     <b>Example:</b>
                                 </p>
                                 <p>
-                                    <img src="images\huntbell.svg" width=112 height=144>   
+                                    <img src="images\classification\huntbell.svg" width=112 height=144>   
                                 </p>
 
                                 <hr />
@@ -357,9 +362,11 @@
                             <div class="collapse" id="detailA10">
                                 <hr />
                                 <p class="text-danger">
-                                    <b>Example:</b> In Minor, the Cross Sections are the Changes that cause the Hunt Bell to
-                                    (1) move from 2nd's Place to 3rd’s Place, and
-                                    (2) move from 4th’s Place to 5th’s Place.
+                                    <b>Example:</b> In Minor, the Cross Sections are the Changes that cause the Hunt Bell to:<br />
+                                    (1) move from 2nd's Place to 3rd’s Place;<br />
+                                    (2) move from 4th’s Place to 5th’s Place;<br />
+                                    (3) move from 5th’s Place to 4th’s Place; and<br />
+                                    (4) move from 3rd’s Place to 2nd’s Place.<br />
                                     See the examples in C.2.1, C.2.2 and C.2.3 below.
                                 </p>
 
@@ -399,7 +406,7 @@
                                     <b>Example:</b>
                                 </p>
                                 <p>
-                                    <img src="images\stantonminimus.svg" width=112 height=400>   
+                                    <img src="images\classification\stantonminimus.svg" width=112 height=400>   
                                 </p>
 
                                 <hr />
@@ -445,7 +452,7 @@
                                     <b>Example:</b>
                                 </p>
                                 <p>
-                                    <img src="images\plainbobminimus.svg" width=112 height=400>   
+                                    <img src="images\classification\plainbobminimus.svg" width=112 height=400>   
                                 </p>
 
                                 <hr />
@@ -490,7 +497,7 @@
                                     <b>Example:</b>
                                 </p>
                                 <p>
-                                    <img src="images\christchurchdublindifferentialdoubles.svg" width=128 height=976>   
+                                    <img src="images\classification\christchurchdublindifferentialdoubles.svg" width=128 height=976>   
                                 </p>
 
                                 <hr />
@@ -506,7 +513,7 @@
                                     whereas bells 1, 2 and 3 return to their starting Places at the end of the 3rd and 6th leads.
                                     Because the Working Bells do not all first return to their starting Places after the same number of Plain Leads, this Method is a Differential.
                                     Because it also has no Hunt Bells, it is a Differential Principle.
-                                    (This method is Christ Church Dublin Differential Doubles.)
+                                    (This Method is Christ Church Dublin Differential Doubles.)
                                 </p>
 
                                 <hr />
@@ -535,7 +542,7 @@
                                     <b>Example:</b>
                                 </p>
                                 <p>
-                                    <img src="images\deferentialdifferentialbobminor.svg" width=144 height=1168>   
+                                    <img src="images\classification\deferentialdifferentialbobminor.svg" width=144 height=1168>   
                                 </p>
 
                                 <hr />
@@ -551,7 +558,7 @@
                                     whereas bells 4, 5 and 6 return to their starting Places at the end of the 3rd and 6th leads.
                                     Because the Working Bells do not all first return to their starting Places after the same number of Plain Leads, this Method is a Differential.
                                     Because it also has at least one Hunt Bell, it is a Differential Hunter.
-                                    (This method is Deferential Differential Bob Minor.)
+                                    (This Method is Deferential Differential Bob Minor.)
                                 </p>
 
                                 <hr />
@@ -575,6 +582,9 @@
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Plain Method
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC1"></a>
+                            </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
@@ -583,6 +593,26 @@
                                 2. The Path of the Hunt Bell includes ringing in 1st's Place; and<br/>
                                 3. The Hunt Bell rings exactly twice in each Place of the Path during a Plain Lead.
                             </p>
+                            <div class="collapse" id="detailC1">
+                                <hr />
+                                <p class="text-danger">
+                                    <b>Example:</b>
+                                </p>
+                                <p>
+                                    <img src="images\classification\plain-bob-minor.svg" width=144 height=208>   
+                                </p>
+
+                                <hr />
+                                <p class="text-primary">
+                                    <b>Further explanation:</b> In this Method, the treble (which is the only hunt bell)
+                                    rings two times in each Place in a Plain Lead.
+                                    The treble also has the same Path if it is rung forwards or backwards.
+                                    This Method is therefore a Plain Method.
+                                    (This Method is Plain Bob Minor.)
+                                </p>
+
+                                <hr />
+                            </div>
                         </div>
                     </div>
 
@@ -592,12 +622,34 @@
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Place Method
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC11"></a>
+                            </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Plain Method in which the Paths of all the bells consist only of Plain Hunting and Place-Making,
                                 and in which a change in the direction of Plain Hunting is separated by Place-Making.
                             </p>
+                            <div class="collapse" id="detailC11">
+                                <hr />
+                                <p class="text-danger">
+                                    <b>Example:</b>
+                                </p>
+                                <p>
+                                    <img src="images\classification\foti-place-minor.svg" width=144 height=208>   
+                                </p>
+
+                                <hr />
+                                <p class="text-primary">
+                                    <b>Further explanation:</b> In this Plain Method, changes in the direction of Plain Hunting
+                                    by all bells are always separated by the Making of at least one Place.
+                                    This Method is therefore a Place Method.
+                                    (This Method is Foti Place Minor.)
+                                </p>
+
+                                <hr />
+                            </div>
                         </div>
                     </div>
 
@@ -607,11 +659,34 @@
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Bob Method
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC12"></a>
+                            </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Plain Method that is not a Place Method.
                             </p>
+                            <div class="collapse" id="detailC12">
+                                <hr />
+                                <p class="text-danger">
+                                    <b>Example:</b>
+                                </p>
+                                <p>
+                                    <img src="images\classification\double-oxford-bob-minor.svg" width=144 height=208>   
+                                </p>
+
+                                <hr />
+                                <p class="text-primary">
+                                    <b>Further explanation:</b> The 'points' in the blue line of this Plain Method,
+                                    such as those circled in green,
+                                    show that a Place is not Made between changes in the direction of Plain Hunting.
+                                    This Method is therefore a Bob Method.
+                                    (This Method is Double Oxford Bob Minor.)
+                                </p>
+
+                                <hr />
+                            </div>
                         </div>
                     </div>
 
@@ -621,6 +696,9 @@
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Treble Dodging Method
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC2"></a>
+                            </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
@@ -630,6 +708,27 @@
 								3. The Hunt Bell rings exactly four times in each Place of the Path during a Plain Lead; and<br/>
 								4. The Hunt Bell Makes a Place exactly twice within a Plain Lead.
                             </p>
+                            <div class="collapse" id="detailC2">
+                                <hr />
+                                <p class="text-danger">
+                                    <b>Example:</b>
+                                </p>
+                                <p>
+                                    <img src="images\classification\kent-treble-bob-minor.svg" width=144 height=400>   
+                                </p>
+
+                                <hr />
+                                <p class="text-primary">
+                                    <b>Further explanation:</b> In this Method, the treble (which is the only hunt bell)
+                                    rings four times in each Place in a Plain Lead.
+                                    The treble also has the same Path if it is rung forwards or backwards.
+                                    The treble Makes a Place twice during a Plain Lead, once in 6th's and once in 1st's.
+                                    This Method is therefore a Treble Dodging Method.
+                                    (This Method is Kent Treble Bob Minor.)
+                                </p>
+
+                                <hr />
+                            </div>
                         </div>
                     </div>
 
@@ -639,12 +738,41 @@
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Treble Bob Method
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC21"></a>
+                            </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Treble Dodging Method in which no bell Makes an Internal Place at any Cross Section,
                                 or which does not have any Cross Sections.
                             </p>
+                            <div class="collapse" id="detailC21">
+                                <hr />
+                                <p class="text-danger">
+                                    <b>Example:</b>
+                                </p>
+                                <p>
+                                    <img src="images\classification\oxford-treble-bob-minor.svg" width=144 height=400>   
+                                </p>
+
+                                <hr />
+                                <p class="text-primary">
+                                    <b>Further explanation:</b> At this Treble Dodging Method's Cross Sections, which are cicled in green,
+                                    there are no Intenal Places Made.
+                                    The Places Made at both Cross Sections are 1st's and 6th's, which are external Places.
+                                    Since this Method has palindromic symmetry (the Place Notation for the
+                                    second half of the lead is the reverse of the Place Notation for the first half of the lead)
+                                    there is no need to check the Cross Sections in the second half of the lead as these will have the same
+                                    Places Made as in the first half of the lead.
+                                    However for asymmetric (i.e. non-palindromic) Methods,
+                                    all Cross Sections must be considered when further classifying a Treble Dodging method.
+                                    This Method is therefore a Treble Bob Method.
+                                    (This Method is Oxford Treble Bob Minor.)
+                                </p>
+
+                                <hr />
+                            </div>
                         </div>
                     </div>
 
@@ -654,11 +782,35 @@
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Surprise Method
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC22"></a>
+                            </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Treble Dodging Method in which one or more bells Make an Internal Place at every Cross Section.
                             </p>
+                            <div class="collapse" id="detailC22">
+                                <hr />
+                                <p class="text-danger">
+                                    <b>Example:</b>
+                                </p>
+                                <p>
+                                    <img src="images\classification\cambridge-surprise-minor.svg" width=144 height=400>   
+                                </p>
+
+                                <hr />
+                                <p class="text-primary">
+                                    <b>Further explanation:</b> An Internal Places is Made at both of this Treble Dodging Method's Cross Sections,
+                                    which are cicled in green.
+                                    4th's is Made at the 2-3 Cross Section, and 3rd's is Made at the 4-5 Cross Section.
+                                    (See the note about palindromic symmetry in Section C.2.1 above, which applies here.)
+                                    This Method is therefore a Surprise Method.
+                                    (This Method is Cambridge Surprise Minor.)
+                                </p>
+
+                                <hr />
+                            </div>
                         </div>
                     </div>
 
@@ -668,11 +820,35 @@
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Delight Method
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC23"></a>
+                            </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Treble Dodging Method that is neither a Treble Bob Method nor a Surprise Method.
                             </p>
+                            <div class="collapse" id="detailC23">
+                                <hr />
+                                <p class="text-danger">
+                                    <b>Example:</b>
+                                </p>
+                                <p>
+                                    <img src="images\classification\college-bob-iv-delight-minor.svg" width=144 height=400>
+                                </p>
+
+                                <hr />
+                                <p class="text-primary">
+                                    <b>Further explanation:</b> An Internal Place is Made at the 2-3 Cross Section of this Treble Dodging Method,
+                                    but an Internal Place is not made at the 4-5 Cross Section (the Cross Sections are cicled in green).
+                                    (See the note about palindromic symmetry in Section C.2.1 above, which applies here.)
+                                    Since Internal Places are Made at some but not all Cross Section Changes,
+                                    this Method is therefore a Delight Method.
+                                    (This Method is College Bob IV Delight Minor.)
+                                </p>
+
+                                <hr />
+                            </div>
                         </div>
                     </div>
 
