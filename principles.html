@@ -247,7 +247,7 @@
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A block of rows is true if it comprises 0 to n extents, plus 1 optional partial extent.
-                                In other words a block of rows is true if either (a) all of its rows are distinct
+                                In other words, a block of rows is true if either (a) all of its rows are distinct
                                 (only occur once) or (b) when the block is longer than an extent, any rows that remain
                                 after removing all extents are distinct.
                                 The location of individual rows within a block of rows does not have any bearing on truth.
@@ -266,8 +266,9 @@
                             <p>
                                 A row may include one or more cover bells.  Cover bells that remain in the same place in every row
                                 (such places are referred to in the framework as fixed cover places) are excluded when determining truth.
-                                Similarly, if a method causes a bell to remain in the same place in every row, this place is also
-                                a fixed cover place and is excluded when determining truth.
+                                Similarly, if a method causes a bell to remain in the same place in every row,
+                                and this bell is not affected by any calls,
+                                then this place is also a fixed cover place and is excluded when determining truth.
                             </p>
                         </div>
                     </div>
