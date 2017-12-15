@@ -50,8 +50,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="-261.99647"
-     inkscape:cy="-20.167118"
+     inkscape:cx="-327.65638"
+     inkscape:cy="-82.796573"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -76,26 +76,26 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-64.406209,-133.97245)">
+     transform="translate(-81.778728,-117.40174)">
     <g
        id="g19"
        clip-path="url(#clipEmfPath2)"
-       transform="matrix(0.30098783,0,0,0.30098783,64.406209,133.97245)" />
+       transform="matrix(0.30098783,0,0,0.30098783,81.778728,117.40174)" />
     <path
        id="path21"
        d="M -0.87904995,-0.87904995 H 175.80999 V 31.645798 H -0.87904995 Z"
        clip-path="url(#clipEmfPath2)"
        style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
        inkscape:connector-curvature="0"
-       transform="matrix(0.30098783,0,0,0.30098783,64.406209,133.97245)" />
+       transform="matrix(0.30098783,0,0,0.30098783,81.778728,117.40174)" />
     <g
        id="g23"
        clip-path="url(#clipEmfPath2)"
-       transform="matrix(0.30098783,0,0,0.30098783,64.406209,133.97245)" />
+       transform="matrix(0.30098783,0,0,0.30098783,81.778728,117.40174)" />
     <g
        id="g31"
        clip-path="url(#clipEmfPath2)"
-       transform="matrix(0.30098783,0,0,0.30098783,64.406209,133.97245)">
+       transform="matrix(0.30098783,0,0,0.30098783,81.778728,117.40174)">
       <text
          id="text29"
          y="16.690979"
@@ -110,7 +110,7 @@
              id="tspan25"
              style="font-style:normal;font-variant:normal;font-weight:400;font-size:18.4375px;font-family:Arial;fill:#ffffff"
              dy="0"
-             dx="0">Draft: Version 1.44</tspan></tspan></text>
+             dx="0">Draft: Version 1.45</tspan></tspan></text>
     </g>
   </g>
 </svg>
