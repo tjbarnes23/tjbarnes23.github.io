@@ -144,6 +144,16 @@
                                 </p>
 
                                 <hr />
+                                <p class="text-muted">
+                                    <b>Technical comments:</b> The following diagram shows the relationships between the various method classes.
+                                    The terms shown in the diagram are all defined below.
+                                    (The diagram is not to any scale.)
+                                </p>
+                                <p>
+                                    <img src="images\classification\classification-venn-diagram.svg" width=448 height=376 /> 
+                                </p>
+
+                                <hr />
                             </div>
                         </div>
                     </div>
@@ -352,51 +362,26 @@
                             9.
                         </div>
                         <div class="col-xl-2 col-sm-3">
-                            Dodging Places
+                            Cross Section
                             <span class="float-right">
                                 <a class="text-success more collapsed" data-toggle="collapse" href="#detailA9"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                Successive pairs of adjacent Places within a Row.  Places 1 and 2 form the first pair of dodging Places,
-                                3 and 4 the second, and so on.
-                                If the Row contains an odd number of Places, the last Place is considered to be its own Dodging Place.
+                                A Change at which the Hunt Bell in question crosses<br />
+                                1. From an even-numbered Place to an adjacent and higher odd-numbered Place; or<br />
+                                2. From an odd-numbered Place to an adjacent and lower even-numbered Place.
                             </p>
                             <div class="collapse" id="detailA9">
                                 <hr />
                                 <p class="text-danger">
-                                    <b>Example:</b> In Minor, the Dodging Places are 1-2, 3-4 and 5-6.
-                                </p>
-
-                                <hr />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-1">
-                            10.
-                        </div>
-                        <div class="col-xl-2 col-sm-3">
-                            Cross Section
-                            <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailA10"></a>
-                            </span>
-                        </div>
-                        <div class="col-xl-9 col-sm-8">
-                            <p>
-                                A Change at which the Hunt Bell in question crosses from one pair of Dodging Places to the next.
-                            </p>
-                            <div class="collapse" id="detailA10">
-                                <hr />
-                                <p class="text-danger">
-                                    <b>Example:</b> In Minor, the Cross Sections are the Changes that cause the Hunt Bell to:<br />
+                                    <b>Example:</b> In Minor, the Cross Sections are the Changes that cause a Hunt Bell to:<br />
                                     (1) move from 2nd's Place to 3rd’s Place;<br />
                                     (2) move from 4th’s Place to 5th’s Place;<br />
                                     (3) move from 5th’s Place to 4th’s Place; and<br />
                                     (4) move from 3rd’s Place to 2nd’s Place.<br />
-                                    See the examples in C.2.1, C.2.2 and C.2.3 below.
+                                    See the examples in D.2.1, D.2.2 and D.2.3 below.
                                 </p>
 
                                 <hr />
@@ -426,8 +411,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Static Method that does not use Jump Changes, that has no Hunt Bells,
-                                and in which all the Working Bells first return to their starting Places after the same number of Plain Leads.
+                                A Static Method that has no Hunt Bells.
                             </p>
                             <div class="collapse" id="detailB1">
                                 <hr />
@@ -471,9 +455,7 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Static Method that does not use Jump Changes, that has one or more Hunt Bells, and in which either
-                                (a) all the Working Bells first return to their starting Places after the same number of Plain Leads, or
-                                (b) there are no Working Bells.
+                                A Static Method that has one or more Hunt Bells.
                             </p>
                             <div class="collapse" id="detailB2">
                                 <hr />
@@ -510,17 +492,51 @@
                             3.
                         </div>
                         <div class="col-xl-2 col-sm-3">
-                            Differential Principle
+                            Dixonoid
                             <span class="float-right">
                                 <a class="text-success more collapsed" data-toggle="collapse" href="#detailB3"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Static Method that does not use Jump Changes, that has no Hunt Bells,
-                                and in which the Working Bells do not all first return to their starting Places after the same number of Plain Leads.
+                                A Dynamic Method.
                             </p>
                             <div class="collapse" id="detailB3">
+                                <hr />
+                                <p class="text-primary">
+                                    <b>Further explanation:</b> The term Dixonoid derives from Dixon's Minor, the first well-known Dynamic Method.
+                                </p>
+
+                                <hr />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Method classes - general -->
+                    <div class="row" id="methodclassesgeneral">
+                        <div class="col-sm-1">
+                            <h5>C.</h5>
+                        </div>
+                        <div class="col-sm-11">
+                            <h5 class="border-bottom">Method Classes: General</h5>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-1">
+                            1.
+                        </div>
+                        <div class="col-xl-2 col-sm-3">
+                            Differential
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC1"></a>
+                            </span>
+                        </div>
+                        <div class="col-xl-9 col-sm-8">
+                            <p>
+                                A Static Method in which the Working Bells do not all first return to their starting Places after the same number of Plain Leads.
+                            </p>
+                            <div class="collapse" id="detailC1">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -534,7 +550,7 @@
                                     <b>Further explanation:</b> A Plain Lead of the Method 5.1.5.1.5.1.5.1.5.345, starting from rounds,
                                     ends with the Row 31254, as shown in the diagram.
                                     At the end of one Plain Lead, no bell has returned to the Place it was in at the initial Row (12345),
-                                    so this Method has no Hunt Bells.
+                                    so this Method has no Hunt Bells.  All bells are therefore Working Bells.
                                     Continuing to apply the place notation successively produces the 5 additional leads shown,
                                     such that after 6 Plain Leads, Rounds is obtained.
                                     This is the Method’s Plain Course.
@@ -545,6 +561,11 @@
                                     (This Method is Christ Church Dublin Differential Doubles.)
                                 </p>
 
+                                <p class="text-primary">
+                                    While the example above shows a Principle that is Differential, Hunters can also be Differential.
+                                    See <a href="https://complib.org/method/28182">Deferential Differential Bob Minor</a> for example.
+                                </p>
+
                                 <hr />
                             </div>
                         </div>
@@ -552,56 +573,25 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                            4.
+                            2.
                         </div>
                         <div class="col-xl-2 col-sm-3">
-                            Differential Hunter
-                            <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailB4"></a>
-                            </span>
+                            Jump
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Static Method that does not use Jump Changes, that has one or more Hunt Bells,
-                                and in which the Working Bells do not all first return to their starting Places after the same number of Plain Leads.
+                                A Method that uses one or more Jump Changes.
                             </p>
-                            <div class="collapse" id="detailB4">
-                                <hr />
-                                <p class="text-danger">
-                                    <b>Example:</b>
-                                </p>
-                                <p>
-                                    <img src="images\classification\deferentialdifferentialbobminor.svg" width=144 height=1168>   
-                                </p>
-
-                                <hr />
-                                <p class="text-primary">
-                                    <b>Further explanation:</b> A Plain Lead of the Method x16x16x36x16x16x1234, starting from rounds,
-                                    ends with the Row 132645, as shown in the diagram.
-                                    At the end of one Plain Lead, the treble is the only bell that has returned to the Place it was in at the initial Row (123456),
-                                    so the treble is this Method's only Hunt Bell.
-                                    Continuing to apply the place notation successively produces the 5 additional leads shown,
-                                    such that after 6 Plain Leads, Rounds is obtained.
-                                    This is the Method’s Plain Course.
-                                    It will be seen that bells 2 and 3 return to their starting Places at the end of the 2nd, 4th and 6th leads,
-                                    whereas bells 4, 5 and 6 return to their starting Places at the end of the 3rd and 6th leads.
-                                    Because the Working Bells do not all first return to their starting Places after the same number of Plain Leads, this Method is a Differential.
-                                    Because it also has at least one Hunt Bell, it is a Differential Hunter.
-                                    (This Method is Deferential Differential Bob Minor.)
-                                </p>
-
-                                <hr />
-                            </div>
                         </div>
                     </div>
 
-                    <!-- Hunters and Differential Hunters with One Hunt Bell -->
-                    <div class="row" id="onehuntbell">
+                    <!-- Method classes - one hunt -->
+                    <div class="row" id="methodclassesonehunt">
                         <div class="col-sm-1">
-                            <h5>C.</h5>
+                            <h5>D.</h5>
                         </div>
                         <div class="col-sm-11">
-                            <h5 class="border-bottom">Hunters and Differential Hunters with One Hunt Bell</h5>
+                            <h5 class="border-bottom">Method Classes: Hunters with One Hunt Bell</h5>
                         </div>
                     </div>
 
@@ -612,17 +602,18 @@
                         <div class="col-xl-2 col-sm-3">
                             Plain Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC1"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD1"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Hunter or Differential Hunter in which:<br/>
+                                A Hunter in which:<br/>
                                 1. The Path of the Hunt Bell is the same if it is rung backwards;<br/>
-                                2. The Path of the Hunt Bell includes ringing in 1st's Place; and<br/>
-                                3. The Hunt Bell rings exactly twice in each Place of the Path during a Plain Lead.
+                                2. The Path of the Hunt Bell includes ringing in 1st's Place;<br/>
+                                3. The Hunt Bell rings exactly twice in each Place of the Path during a Plain Lead; and<br />
+                                4. There are no Jump Changes.
                             </p>
-                            <div class="collapse" id="detailC1">
+                            <div class="collapse" id="detailD1">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -652,7 +643,7 @@
                         <div class="col-xl-2 col-sm-3">
                             Place Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC11"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD11"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
@@ -660,7 +651,7 @@
                                 A Plain Method in which the Paths of all the bells consist only of Hunting and Place-Making,
                                 and in which a change in the direction of Hunting is separated by Place-Making.
                             </p>
-                            <div class="collapse" id="detailC11">
+                            <div class="collapse" id="detailD11">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -689,14 +680,14 @@
                         <div class="col-xl-2 col-sm-3">
                             Bob Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC12"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD12"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Plain Method that is not a Place Method.
                             </p>
-                            <div class="collapse" id="detailC12">
+                            <div class="collapse" id="detailD12">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -726,18 +717,19 @@
                         <div class="col-xl-2 col-sm-3">
                             Treble Dodging Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC2"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD2"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Hunter or Differential Hunter in which:<br/>
+                                A Hunter in which:<br/>
 								1. The Path of the Hunt Bell is the same if it is rung backwards;<br/>
 								2. The Path of the Hunt Bell includes ringing in 1st's Place;<br/>
-								3. The Hunt Bell rings exactly four times in each Place of the Path during a Plain Lead; and<br/>
-								4. The Hunt Bell Makes a Place exactly twice within a Plain Lead.
+								3. The Hunt Bell rings exactly four times in each Place of the Path during a Plain Lead;<br/>
+								4. The Hunt Bell Makes a Place exactly twice within a Plain Lead; and<br />
+                                5. There are no Jump Changes.
                             </p>
-                            <div class="collapse" id="detailC2">
+                            <div class="collapse" id="detailD2">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -771,7 +763,7 @@
                         <div class="col-xl-2 col-sm-3">
                             Treble Bob Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC21"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD21"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
@@ -779,7 +771,7 @@
                                 A Treble Dodging Method in which no bell Makes an Internal Place at any Cross Section,
                                 or which does not have any Cross Sections.
                             </p>
-                            <div class="collapse" id="detailC21">
+                            <div class="collapse" id="detailD21">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -815,14 +807,14 @@
                         <div class="col-xl-2 col-sm-3">
                             Surprise Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC22"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD22"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Treble Dodging Method in which one or more bells Make an Internal Place at every Cross Section.
                             </p>
-                            <div class="collapse" id="detailC22">
+                            <div class="collapse" id="detailD22">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -853,14 +845,14 @@
                         <div class="col-xl-2 col-sm-3">
                             Delight Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC23"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD23"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Treble Dodging Method that is neither a Treble Bob Method nor a Surprise Method.
                             </p>
-                            <div class="collapse" id="detailC23">
+                            <div class="collapse" id="detailD23">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -891,19 +883,20 @@
                         <div class="col-xl-2 col-sm-3">
                             Treble Place Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC3"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD3"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Hunter or Differential Hunter in which:<br/>
+                                A Hunter in which:<br/>
                                 1. The Path of the Hunt Bell is the same if it is rung backwards;<br/>
                                 2. The Path of the Hunt Bell includes ringing in 1st's Place;<br/>
                                 3. The Hunt Bell rings exactly four times in each Place of the Path during a Plain Lead;<br/>
-                                4. The Hunt Bell Makes a Place more than twice within a Plain Lead; and<br/>
-                                5. The Path of the Hunt Bell has exactly two points of Symmetry.
+                                4. The Hunt Bell Makes a Place more than twice within a Plain Lead;<br/>
+                                5. The Path of the Hunt Bell has exactly two points of Symmetry; and<br />
+                                6. There are no Jump Changes.
                             </p>
-                            <div class="collapse" id="detailC3">
+                            <div class="collapse" id="detailD3">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -935,19 +928,21 @@
                         <div class="col-xl-2 col-sm-3">
                             Alliance Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC4"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD4"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Hunter or Differential Hunter in which:<br/>
+                                A Hunter in which:<br/>
 								1. The Path of the Hunt Bell is the same if it is rung backwards;<br/>
 								2. The Path of the Hunt Bell includes ringing in 1st's Place;<br/>
 								3. The Hunt Bell rings either twice or four times or six times in each Place of the Path during a Plain Lead;<br/>
-                                4. The Hunt Bell does not ring the same number of times in each Place of the Path during a Plain Lead; and<br/>
-								5. The Hunt Bell Makes a Place exactly twice within a Plain Lead.
+                                4. The Hunt Bell does not ring the same number of times in each Place of the Path during a Plain Lead;<br/>
+								5. The Hunt Bell Makes a Place exactly twice within a Plain Lead; and<br />
+                                6. There are no Jump Changes.
+
                             </p>
-                            <div class="collapse" id="detailC4">
+                            <div class="collapse" id="detailD4">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -982,7 +977,7 @@
                         <div class="col-xl-2 col-sm-3">
                             Little Method
                             <span class="float-right">
-                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailC5"></a>
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailD5"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
@@ -990,7 +985,7 @@
                                 A Plain, Treble Dodging, Treble Place or Alliance Method in which:<br/>
 								1. The Path of the Hunt Bell is restricted to fewer Places than the Stage of the Method.
                             </p>
-                            <div class="collapse" id="detailC5">
+                            <div class="collapse" id="detailD5">
                                 <hr />
                                 <p class="text-danger">
                                     <b>Example:</b>
@@ -1017,13 +1012,13 @@
                         </div>
                     </div>
 
-                    <!-- Hunters and Differential Hunters with More than One Hunt Bell -->
-                    <div class="row" id="morethanonehuntbell">
+                    <!-- Method classes - more than one hunt -->
+                    <div class="row" id="methodclassesmorethanonehunt">
                         <div class="col-sm-1">
-                            <h5>D.</h5>
+                            <h5>E.</h5>
                         </div>
                         <div class="col-sm-11">
-                            <h5 class="border-bottom">Hunters and Differential Hunters with More than One Hunt Bell</h5>
+                            <h5 class="border-bottom">Method Classes: Hunters with More than One Hunt Bell</h5>
                         </div>
                     </div>
 
@@ -1033,50 +1028,26 @@
                         </div>
                         <div class="col-sm-11">
                             <p>
-                            	If a Hunter or Differential Hunter has more than one Hunt Bell, it has the classification of the first
+                            	If a Hunter has more than one Hunt Bell, it has the classification of the first
                             	Method Class found, when inspecting each of the hunt bells, using the order:
                             	Plain Method, Treble Dodging Method, Treble Place Method, Alliance Method.
                             </p>
 
                             <p>
 								If the Path(s) of the Hunt Bell(s) of the first Method Class found above are all restricted to fewer Places
-								than the Stage of the Method, then the Hunter or Differential Hunter is also classified as a Little Method.
+								than the Stage of the Method, then the Hunter is also Little.
                             </p>
 
                             <p>
 								When the first Method Class found above is a Plain Method, the Method is further
-								classified in accordance with Sections C.1.1 and C.1.2 above.
+								classified in accordance with Sections D.1.1 and D.1.2 above.
                             </p>
 
                             <p>
                                 When the first Method Class found above is a Treble Dodging Method, the Method is further
-                                classified in accordance with Section C.2.1, C.2.2 and C.2.3 above.
+                                classified in accordance with Section D.2.1, D.2.2 and D.2.3 above.
                                 If the Method has more than one Treble Dodging Hunt Bell, the Cross Section Changes are all the
-                                Changes in which any Treble Dodging Hunt Bell crosses from one pair of Dodging Places to the next.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Unclassified -->
-                    <div class="row" id="unclassified">
-                        <div class="col-sm-1">
-                            <h5>E.</h5>
-                        </div>
-                        <div class="col-sm-11">
-                            <h5 class="border-bottom">Methods that are Currently Unclassified</h5>
-                        </div>
-                    </div>
-
-                     <div class="row">
-                        <div class="col-sm-1">
-                        	1.
-                        </div>
-                        <div class="col-sm-11">
-                            <p>
-                            	Dynamic Methods, and Static Methods that use Jump Changes, are not currently incorporated in the classification
-                            	system as defined in Sections B, C and D above.
-                                Furthermore, Methods may have a Type of Hunter or Differential Hunter, but not classify any further under Sections C and D above.
-                                For the avoidance of doubt, this does not restrict any of these Methods from being used to produce Touches under Section 3.I.
+                                Changes that are a Cross Section Change for any Treble Dodging Hunt Bell.
                             </p>
                         </div>
                     </div>
@@ -1097,16 +1068,30 @@
                         </div>
                         <div class="col-xl-2 col-sm-3">
                             Class Name
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailF1"></a>
+                            </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                Class Name is constructed by concatenating up to three terms as follows:<br/>
-                                1. Add the term "Differential" for a Differential Principle or a Differential Hunter;<br/>
-                                2. Add the term "Little" for a Little Method; and<br/>
-                                3. Add one of the following classification terms if it applies: Place, Bob, Treble Bob,
+                                Class Name is constructed by concatenating up to four terms as follows:<br/>
+                                1. Add the term "Differential" if the Method has this Class;<br/>
+                                2. Add the term "Jump" if the Method has this Class;<br /> 
+                                3. Add the term "Little" if the Method has this Class; and<br/>
+                                4. Add one of the following classification terms if it applies: Place, Bob, Treble Bob,
                                 Surprise, Delight, Treble Place, Alliance.<br/>
-                                If none of these terms apply, including when a Method is unclassified, the Method has no Class Name.
+                                If none of these terms apply, the Method has no Class Name.
                             </p>
+                            <div class="collapse" id="detailF1">
+                                <hr />
+                                <p class="text-primary">
+                                    <b>Further explanation:</b> Note that in the diagram in A.1 above,
+                                    square areas represent Method Types, whereas circular areas represent Method Classes.
+                                    Only Method Classes generate a word in the Class Name.
+                                </p>
+
+                                <hr />
+                            </div>
                         </div>
                     </div>
 

@@ -113,11 +113,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="180.43215"
-     inkscape:cy="-119.87227"
+     inkscape:zoom="8.3888892"
+     inkscape:cx="111.02206"
+     inkscape:cy="76.768209"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3099"
      showgrid="false"
      inkscape:window-width="3440"
      inkscape:window-height="1377"
@@ -132,7 +132,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -450,14 +450,13 @@
              dx="0">3</tspan></tspan></text>
       <text
          id="text3085"
-         y="10.354065"
-         x="84.388794"
-         transform="translate(4.39525,41.315348)"
+         y="51.669415"
+         x="117.24152"
          style="font-style:normal;font-variant:normal;font-weight:400;font-size:11.4375px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            id="tspan3083"
-           y="10.354065"
-           x="84.388794"
+           y="51.669415"
+           x="117.24152"
            sodipodi:role="line"><tspan
              id="tspan3081"
              style="font-style:normal;font-variant:normal;font-weight:400;font-size:11.4375px;font-family:Arial;fill:#000000"
@@ -465,14 +464,13 @@
              dx="0">4</tspan></tspan></text>
       <text
          id="text3091"
-         y="10.354065"
-         x="112.51839"
-         transform="translate(4.39525,41.315348)"
+         y="51.669415"
+         x="88.453957"
          style="font-style:normal;font-variant:normal;font-weight:400;font-size:11.4375px;line-height:125%;font-family:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
          xml:space="preserve"><tspan
            id="tspan3089"
-           y="10.354065"
-           x="112.51839"
+           y="51.669415"
+           x="88.453957"
            sodipodi:role="line"><tspan
              id="tspan3087"
              style="font-style:normal;font-variant:normal;font-weight:400;font-size:11.4375px;font-family:Arial;fill:#000000"
