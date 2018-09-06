@@ -564,8 +564,14 @@
                                     The following diagram shows the relationships between the various components of method ringing.
                                     Terms in the diagram that are not defined above are defined elsewhere in the Framework.
                                 </p>
+
                                 <p>
                                     <img src="images\definitions\hierarchy.svg" width=1024 height=576 /> 
+                                </p>
+
+                                <p class="text-muted">
+                                    Note that since a Composition might specify just to ring a Plain Lead or a Plain Course of a single Method,
+                                    a Plain Lead and a Plain Course are therefore also Touches, and therefore also Blocks.
                                 </p>
 
                                 <hr />
@@ -1028,10 +1034,13 @@
                                     For example, if a Composition uses a Doubles Method initially, applying to Places 1 to 5,
                                     and then switches to a Minor Method, applying to Places 1 to 6, then the Composition's Changes are all specified
                                     as Minor Changes, with a place notation of "6" added to all Doubles Changes.  This Composition therefore has a Stage of Minor.
+                                    However, even though the Composition has a Stage of Minor, it is still correct to describe the bell in 6th's Place
+                                    as a Cover Bell when the Doubles Method is being rung, because for these Rows, 6th's Place is not being operated
+                                    on by the Method of the Composition.
                                 </p>
 
 								<p class="text-primary">
-                                	Similarly, a Composition might use a Doubles Method but is designed to produce a Minor Block, and Calls
+                                	In another scenario, a Composition might use a Doubles Method but is designed to produce a Minor Block, and Calls
                                 	are used that occasionally exchange the Cover Bell in 6th's Place.  In this case the Composition's Changes
                                 	are all specified as Minor Changes (so the Composition's Stage is Minor), with a place notation of "6" added to all Changes where the Cover Bell is not affected.
                                 	For example, if the Composition's Doubles Method has a "3" Change, this becomes a "36" Change in the Composition. 
@@ -1358,10 +1367,10 @@
                             <p>
                                 A Touch has Accepted Truth if:<br />
                                 a) It is rung on n bells;<br />
-                                b) It comprises (x) Round Block(s) with an Effective Stage of n and
-                                    (y) Round Block(s) with an Effective Stage of n-1 and with nth's Place a Fixed Place;<br />
-                                c) The Rows in (x) and (y) are True when considered independently using the definition of True in Section 3.J.4; and<br/>
-                                d) The Rows in (x) contain at least one Extent at Stage n.
+                                b) It comprises (i) Round Block(s) with an Effective Stage of n and
+                                    (ii) Round Block(s) with an Effective Stage of n-1 and with nth's Place a Fixed Place;<br />
+                                c) The Rows in (i) and (ii) are True when considered independently using the definition of True in Section 3.J.4; and<br/>
+                                d) The Rows in (i) contain at least one Extent at Stage n.
                             </p>
                             <div class="collapse" id="detailJ5">
                                 <hr />
