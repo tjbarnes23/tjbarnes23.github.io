@@ -1244,38 +1244,6 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                <i>2.B.6 Truth at N is every possible row not more than N times.
-                                Complete at N is every possible row at least N times.
-                                then with cover or fixed bells, truth is still maintained
-                                Completeness is all possibly distinct rows while maintaining fixed bells</i>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-1">
-                            
-                        </div>
-                        <div class="col-sm-1">
-                            A.
-                        </div>
-                        <div class="col-sm-10">
-                            <p>
-                                
-                            </p>
-
-                            <hr />
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-1">
-                            28.
-                        </div>
-                        <div class="col-sm-1">
-                            Q.
-                        </div>
-                        <div class="col-sm-10">
-                            <p>
                                 <i>Appendix E.E.2 (formerly 2.C.2) what is length - is it changes or different rows?
                                 Currently changes as we start and end in rounds.
                                 But if rows - would ringing 5000 rows of major from pull-off and not finishing in rounds be a peal length? Probably not as defined as changes later.</i>
@@ -1302,7 +1270,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                            29.
+                            28.
                         </div>
                         <div class="col-sm-1">
                             Q.
@@ -1335,7 +1303,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                            30.
+                            29.
                         </div>
                         <div class="col-sm-1">
                             Q.
@@ -1374,7 +1342,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                            31.
+                            30.
                         </div>
                         <div class="col-sm-1">
                             Q.
@@ -1418,7 +1386,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                            32.
+                            31.
                         </div>
                         <div class="col-sm-1">
                             Q.
@@ -1451,7 +1419,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                            33.
+                            32.
                         </div>
                         <div class="col-sm-1">
                             Q.
@@ -1495,7 +1463,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                            34.
+                            33.
                         </div>
                         <div class="col-sm-1">
                             Q.
@@ -1532,7 +1500,7 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                            35.
+                            34.
                         </div>
                         <div class="col-sm-1">
                             Q.
@@ -1953,34 +1921,6 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-1">
-                            10.
-                        </div>
-                        <div class="col-sm-1">
-                            Q.
-                        </div>
-                        <div class="col-sm-10">
-                            <p>
-                                <i></i>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-1">
-                            
-                        </div>
-                        <div class="col-sm-1">
-                            A.
-                        </div>
-                        <div class="col-sm-10">
-                            <p>
-                            </p>
-
-                            <hr />
-                        </div>
-                    </div>
-
                     <!-- Call changes -->
                     <div class="row" id="callchanges">
                         <div class="col-sm-1">
@@ -2097,7 +2037,23 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                
+                                We think it would be too confusing and complicated to have (a) methods known by more than one name,
+                                and (b) the previous name of a method whose name has been changed
+                                (e.g. due to a classification change that resulted in a naming conflict, or similar)
+                                to be reserved against future use.
+                            </p>
+
+                            <p>
+                                We think a better approach is for the methods library to be able to record previous names
+                                by which certain methods used to be known, and for these names to be searchable within the library.
+                                Of course, some people will continue to use former names -- the framework only provides
+                                suggested, "best practice" ways of describing method ringing performances.
+                            </p>
+
+                            <p>
+                                And in any case, we only expect a very small number of methods to require a name change under
+                                this framework.  Some methods will get a new title (= name + class + stage) because of classification changes,
+                                but the vast majority of these will keep the same method name.
                             </p>
 
                             <hr />
@@ -2127,7 +2083,17 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                
+                                Item 4 of Appendix B: Method Name Syntax describes the process for determining
+                                whether two method names are considered the same.
+                                The aim of this process, which is mainly directed at ringing software developers,
+                                is to prevent method names being so similar that they could easily be confused.
+                                E.g. London No. 3 and London No 3 would be considered the same under this process.
+                                However, the process doesn't go as far as eliminating all spaces betweeen other
+                                characters.  Multiple spaces are reduced to a single space, but a single space
+                                is considered different from no space.
+                                London No 3 would therefore be considered different from Londonno3.
+                                There are already examples of this in the method library --
+                                for example, Whitehall Suprise Major and White Hall Surprise Major have both been named.
                             </p>
 
                             <hr />
@@ -2157,7 +2123,27 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                
+                                We believe there will be very few methods requiring a name change as a result of the implementation
+                                of this framework.  Analysis of this needs to be completed, but it appears that less than 10 methods will be
+                                affected.
+                            </p>
+
+                            <p>
+                                A name clash can arise where the framework gives an existing method a different classification,
+                                but there is already a method with the same name that also has the new classification.
+                                In this case, we will attempt to contact the band that named the method that's being reclassified,
+                                and ask what they would like to do.
+                                If we can't contact anyone involved with the original naming, we will use a mechanism
+                                such as adding "No. 2" to make the name unique.
+                            </p>
+
+                            <p>
+                                A full list of methods whose titles will change (and highlighting any that need a name change
+                                due to a conflict) will be published on the framework website prior to implementation.
+                            </p>
+
+                            <p>
+                                [The above schedule to be produced.]
                             </p>
 
                             <hr />
@@ -2311,7 +2297,9 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                
+                                There may be a case for expanding Appendix C: Leadhead Codes to give more explanation and background.
+                                In the interests of keeping to our targeted timetable for the implementation of the first version of the framework,
+                                we've added this to the list of items to be considered for a subsequent version of the framework.
                             </p>
 
                             <hr />
@@ -2350,7 +2338,15 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                
+                                We agree that the framework should not require any additional (undocumented within the framework) knowledge in order to understand what the framework means, and this has been one of our key goals. We hope we've achieved this, but welcome any suggestions on an ongoing basis on how the framework might be made clearer.
+                            </p>
+
+                            <p>
+                                It hasn't been our intention to portray the framework as "too difficult for the ordinary ringer to understand".
+                                We have been cautious in not giving the impression that we think every ringer ought be spending lots of time studying the framework.
+                                Ringing has lots of problems to solve, including existential ones relating to the declining number of ringers and ageing demographics.
+                                We therefore wanted to get the balance right in saying there is value to having a well-thought framework for describing method ringing,
+                                but there are also many other issues facing the Exercise that need ringers' time and energy.
                             </p>
 
                             <hr />
@@ -2924,6 +2920,43 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
+                                <i>Check mathematics for formal permutation definitions.<br />
+                                Also cycle notation<br />
+                                (12)(34)(56)<br />
+                                3.C.1. unfortunately mathematicians seem to regard transposition differently:<br />
+                                http://mathworld.wolfram.com/Transposition.html<br />
+                                "For example, the swapping of 2 and 5 to take the list 123456 to 153426 is a transposition"</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1">
+                            
+                        </div>
+                        <div class="col-sm-1">
+                            A.
+                        </div>
+                        <div class="col-sm-10">
+                            <p>
+                                We've now added the following technical comment to 3.C.1:
+                                "Note that in mathematics, transposition refers to the exchange of two elements.
+                                However in ringing, as well as in more general usage, transposition can involve the exchange of more than two elements.
+                                For example, ringers talk about transposing coursing orders, which often involves rotating 3 bells."
+                            </p>
+
+                            <hr />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-1">
+                            2.
+                        </div>
+                        <div class="col-sm-1">
+                            Q.
+                        </div>
+                        <div class="col-sm-10">
+                            <p>
                                 <i>3.E.1. "A sequence of Changes all of the same Stage, or a process to generate such a sequence."<br />
                                 The 'process' part is a little tricky and leaves scope for well defined, but useless definitions.<br />
                                 E.g. process<br />
@@ -2967,7 +3000,21 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
+                                Agreed that processes for generating sequences of changes could be well-defined but practically useless,
+                                as demonstrated by your examples.
+                                We've now added the following technical comment to 3.E.3 (Dynamic Method), that uses your bobs-only Erin example:
+                            </p>
 
+                            <p>
+                               "Technical comment: A Dynamic Method should be capable of producing a readily-determinable sequence of Changes. A process such as
+                                'Ring the Changes [3.1.3.1.3.{7|5}]^840 where at each choice of 7 or 5, 7 is chosen
+                                unless it is impossible to generate a Round Block of the Extent with any choice of following 7 or 5s'
+                                is not a valid Dynamic Method, even though this is a well-defined process.
+                            </p>
+
+                            <p>
+                                "Dynamic Methods are in their infancy, and more precise definitions in this area may be developed for future versions of the framework
+                                if there is sufficient interest by the ringing community."
                             </p>
 
                             <hr />
@@ -2976,14 +3023,15 @@
 
                     <div class="row">
                         <div class="col-sm-1">
-                            2.
+                            3.
                         </div>
                         <div class="col-sm-1">
                             Q.
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                <i>3.G.1 "In addition to using a Method's whole sequence of Changes one or more times in a Composition, any subset of a Method's sequence of Changes may also be used."<br />
+                                <i>3.G.1 "In addition to using a Method's whole sequence of Changes one or more times in a Composition,
+                                any subset of a Method's sequence of Changes may also be used."<br />
                                 'Any subset'? including the empty set?<br />
                                 Do you mean contiguous chunk, or any random changes extracted from the method?<br />
                                 What about double bob minimus X14X34X14X12.<br />
@@ -3000,7 +3048,59 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
+                                This is the known problem of overlap -- there isn't a way to define method ringing such
+                                that there is only one valid way to describe any given sequence of changes.
+                                E.g. Stedman can also be described as spliced Erin and Bastow Little Bob.
+                            </p>
 
+                            <p>
+                                Any attempt to enforce a single way of defining a given sequence of changes
+                                results in valid ringing constructs also being ruled out.
+                                We therefore leave it to ringers to use their good judgement in deciding
+                                the best way to describe any given sequence of changes.
+                            </p>
+
+                            <hr />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-1">
+                            4.
+                        </div>
+                        <div class="col-sm-1">
+                            Q.
+                        </div>
+                        <div class="col-sm-10">
+                            <p>
+                                <i>2.B.6 Truth at N is every possible row not more than N times.
+                                Complete at N is every possible row at least N times.
+                                then with cover or fixed bells, truth is still maintained
+                                Completeness is all possibly distinct rows while maintaining fixed bells</i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1">
+                            
+                        </div>
+                        <div class="col-sm-1">
+                            A.
+                        </div>
+                        <div class="col-sm-10">
+                            <p>
+                                Agreed. Put another way, and replacing N with M in your second sentence,
+                                we can say that any touch can be given a pair of numbers, N and M, relating
+                                to its truth.<br />
+                                For no rows repeated, N = 1 (e.g. a normal peal of Triples of higher);<br />
+                                For complete, N = M (e.g. two extents of Grandsire Doubles, where N and M = 2);<br />
+                                For truth as defined in the framework, N - M <= 1.<br />
+                            </p>
+
+                            <p>
+                                We found that we didn't need to define Complete for use elsewhere in the framework,
+                                though it is a commonly-used term when discussing truth.
+                                We therefore didn't include Complete in the interests of simplicity.
                             </p>
 
                             <hr />
