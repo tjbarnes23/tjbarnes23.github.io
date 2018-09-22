@@ -283,7 +283,7 @@
                         <div class="col-sm-10">
                             <p>
                                 Yes, apologies that this wasn't as easily located as it could have been.
-                                It's part of the Transitional Arrangements page -- see the last paragraph of Section 14.1.
+                                It's part of the Transitional Arrangements page -- see the last paragraph of Appendix F.1.
                                 We've now also included a reference to this list in the further explanation of Section 4.A.1.
                             </p>
 
@@ -327,7 +327,10 @@
                             <p>
                                 The term 'hunter' is fairly recent - it was introduced in 2002 as part of the update to the Decisions
                                 that introduced differential hunters.
-                                [Should we switch to using Princuple, Hunt Method, Differential Method and Jump Method?]
+                                We debated whether to use 'hunt method' instead of 'hunter', and possibly also 'differential method'
+                                instead of 'differential'.  But the one-word versions are useful (e.g. when wanting conciseness on a web page)
+                                so the consensus was to keep 'hunter' and 'differential'.
+                                But we drew the line at 'jumper', given its other meanings.
                             </p>
 
                             <hr />
@@ -427,7 +430,9 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                We don't view the framework as being the right place to house an extensive glossary of ringing terms --
+                                The framework does define the ringing terms it uses as they are introduced.
+                                However, we've only defined the terms that are needed across the framework.
+                                We don't view the framework as the right place to house an extensive glossary of ringing terms --
                                 this would turn an already-complex document into an even more complex one.
                                 However an extensive glossary of ringing terms already exists <a href="http://jaharrison.me.uk/Ringing/Glossary">here</a>.
                             </p>
@@ -656,11 +661,16 @@
                                 We considered this, but the difficulty is that there will be lots of different views on where
                                 to draw the line between vanilla and exotic.
                                 This approach could also make it harder for readers to find the information they're looking for.
-                                However, we will consider this in more detail for a subsequent version of the framework.
                             </p>
 
                             <p>
-                                The framework is intentionally not a mathematical paper -- it should be accessible to as many ringers as possible.
+                                Also, the framework exists to be able to describe all method ringing, and is not intended as an introductory primer to method ringing --
+                                there are other publications that provide this.
+                            </p>
+
+                            <p>
+                                The framework is also intentionally not a mathematical paper -- while not an introductory primer,
+                                it should be accessible to as many ringers as possible.
                                 However, we are considering adding a new section to a subsequent version of the framework that describes method ringing in mathematical terms
                                 (written by a ringing mathematician).
                             </p>
@@ -863,8 +873,11 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                As a general rule, we haven't defined terms where the normal dictionary definition of the word suffices.
-                                We think that 'class' and 'descriptor' both fall into this category.
+                                Method Class is defined as 4.A.1.
+                                We didn't think that Method Class Descriptor needed a separate, formal definition because
+                                the dictionary definition of Descriptor applies.
+                                We therefore went straight to defining how Method Class Desciptors are formed (5.B.1).
+                                As a general rule for the framework, we haven't defined terms where the normal dictionary definition of the word suffices.
                             </p>
 
                             <hr />
@@ -1070,11 +1083,11 @@
                             <p>
                                 We agree ringing hasn't evolved clear terminology to differentiate between a round block comprising two extents
                                 (where the rows can appear in any order), and two individual extents rung consecutively.
-                                Where terminology like this hasn't evolved, it generally means that either the distinction isn't important,
+                                Where terminology like this hasn't evolved, it generally means that either the distinction usually isn't important,
                                 or the distinction can be made using ordinary dictionary words (such as 'two individual extents rung consecutively'
                                 as above.)
-                                We don't have an immediate proposal on this, but will table it as something to look at for a subsequent version
-                                of the framework.
+                                We've now updated 3.J.1 to point out the possibly ambiguity, and noted that care should be taken with communication
+                                where this distinction is important.
                             </p>
 
                             <hr />
@@ -1968,6 +1981,8 @@
                                 we therefore don't propose to include a description of call change ringing in the framework at this stage.
                                 However, there may be a case for adding this in a subsequent version of the framework if the
                                 ringing community thinks this would be useful.
+                                Alternatively, a separate framework for call change ringing could be developed.
+                                In either case, this should be led by specialists in the call changes field.
                             </p>
 
                             <hr />
@@ -2007,7 +2022,10 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                See <a href="https://complib.org/method/search/?title=baldrick%20differential">here</a>.
+                                In CompLib it can be found <a href="https://complib.org/method/search/?title=baldrick%20differential">here</a>.
+                                In the text files at http://methods.cccbr.org.uk, it appears in the Plain file.
+                                While there's a separate file for Differentials, this only includes differentials without hunt bells.
+                                Differential hunters are included with the corresponding classes of non-differential hunters.
                             </p>
 
                             <hr />
@@ -2052,7 +2070,7 @@
 
                             <p>
                                 And in any case, we only expect a very small number of methods to require a name change under
-                                this framework.  Some methods will get a new title (= name + class + stage) because of classification changes,
+                                this framework (see Appendix F.1).  Some methods will get a new title (= name + class + stage) because of classification changes,
                                 but the vast majority of these will keep the same method name.
                             </p>
 
@@ -2085,15 +2103,17 @@
                             <p>
                                 Item 4 of Appendix B: Method Name Syntax describes the process for determining
                                 whether two method names are considered the same.
-                                The aim of this process, which is mainly directed at ringing software developers,
-                                is to prevent method names being so similar that they could easily be confused.
+                                The aim of this process is to prevent method names being so similar that they could easily be confused.
                                 E.g. London No. 3 and London No 3 would be considered the same under this process.
                                 However, the process doesn't go as far as eliminating all spaces betweeen other
                                 characters.  Multiple spaces are reduced to a single space, but a single space
                                 is considered different from no space.
                                 London No 3 would therefore be considered different from Londonno3.
                                 There are already examples of this in the method library --
-                                for example, Whitehall Suprise Major and White Hall Surprise Major have both been named.
+                                for example, Whitehall Suprise Major and White Hall Surprise Major have both been named,
+                                as have Christchurch Surprise Royal and Christ Church Surprise Royal.
+                                The Technical and Taxonomy Workgroup will consider similar method names when they occur,
+                                and may request that a band uses a different name to avoid possible confusion.
                             </p>
 
                             <hr />
@@ -2123,27 +2143,8 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                We believe there will be very few methods requiring a name change as a result of the implementation
-                                of this framework.  Analysis of this needs to be completed, but it appears that less than 10 methods will be
-                                affected.
-                            </p>
-
-                            <p>
-                                A name clash can arise where the framework gives an existing method a different classification,
-                                but there is already a method with the same name that also has the new classification.
-                                In this case, we will attempt to contact the band that named the method that's being reclassified,
-                                and ask what they would like to do.
-                                If we can't contact anyone involved with the original naming, we will use a mechanism
-                                such as adding "No. 2" to make the name unique.
-                            </p>
-
-                            <p>
-                                A full list of methods whose titles will change (and highlighting any that need a name change
-                                due to a conflict) will be published on the framework website prior to implementation.
-                            </p>
-
-                            <p>
-                                [The above schedule to be produced.]
+                                The process for this is described in Appendix F.1 Transitional Arrangements, which also links to
+                                a schedule of the affected methods.
                             </p>
 
                             <hr />
@@ -2464,17 +2465,8 @@
                         </div>
                         <div class="col-sm-10">
                             <p>
-                                We've added some additional explanation of mode in Section 13, which hopefully clears this up [to be added].
-                                Here's a standalone example:
-                                Assume a Treble Dodging Major method has place notation below the treble of x12x 3 for sections F G.
-                                (F = treble in 5-6; G = treble in 6-7.)
-                                When creating sections E2 F2 for the Royal extension (E2 = treble in 7-8; F2 = treble in 8-9), if the mode was 1, E2 F2 would be x14x 5.
-                                This is because mode 1 means any place made in 1st's place or below remains the same in the extension, and any place
-                                made in 2nd's place or higher moves up 2 places.
-                                So the 1 in 12 is unchanged, but the 2 in 12 moves up to 4, and the 3 moves up to 5.
-                                If the mode was 2, E2 F2 would be x12x 5, because mode 2 means any place made in 2nd's place or below remains the same in the extension, and any place
-                                made in 3rd's place or higher moves up 2 places.
-                                Similarly, if the mode was 3 or higher, E2 F2 would be x12x 3 (i.e. the same as E F).
+                                We've now separately defined Mode in the framework (see Appendix D.A.4), and have shown in the further explanation
+                                of this section how different modes affect an example string of place notation.
                             </p>
 
                             <hr />
@@ -2891,7 +2883,7 @@
                                 This is the permissive approach, and keeping ringing terminology as simple and consistent as possible makes things easier for new ringers joining the Exercise.
                                 No one has to ring a 5000 – 5039 of Triples if they don’t want to, but equally we don't think anyone should try to prevent those who do want to ring a 5000 – 5039 of Triples from claiming a peal,
                                 given this number meets the requirement for a peal at other stages.
-                                In any community such as ours there will be a wide range of opionions, and ultimately it's beneficial if we can find ways to coexist as peacefully as possible.
+                                In any community such as ours there will be a wide range of opinions, and ultimately it's beneficial if we can find ways to coexist as peacefully as possible.
                                 No one thinks a 4992 should be a peal (ok, you could probably find someone who thinks this), but there are many ringers who would like to see 5000 as the minimum peal length across all stages.
                                 The 5040 supporters can still choose never to ring peals of Triples of less than 5040.
                                 Live and let live.
