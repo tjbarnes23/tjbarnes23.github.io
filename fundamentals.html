@@ -1458,16 +1458,22 @@
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Touch is True if it contains zero or more Extents at the Touch's Effective Stage,
-                                and any further Rows are distinct.<br/>
-                                If a Touch is a Round Block, the final Row is excluded when determining whether the Touch is True.
+                                A Touch is True if:<br />
+                                a) It contains zero or more Extents at the Touch's Effective Stage; and<br />
+                                b) Any Rows in addition to the above are distinct.
                             </p>
                             <div class="collapse" id="detailJ4">
                                 <hr />
                                 <p class="text-primary">
-                                    <b>Futher explanation:</b> When ringing a Touch, it is traditional to ring the initial Row (usually Rounds) several times before starting the Changes, and similarly to ring the final Row several times before standing
+                                    <b>Futher explanation:</b> If a Touch is a Round Block, the final Row is excluded when determining whether the Touch is True.
+                                </p>
+
+                                <p class="text-primary">
+                                    When ringing a Touch, it is traditional to ring the initial Row (usually Rounds)
+                                    several times before starting the Changes, and similarly to ring the final Row several times before standing
                                     the bells. These Rows (shown in the diagram below) are excluded when determining Truth.
                                 </p>
+
                                 <p>
                              		<img src="images/fundamentals/openingclosingrounds.svg" width=307 height=432>	
                              	</p>
@@ -1490,33 +1496,20 @@
                         <div class="col-xl-9 col-sm-8">
                             <p>
                                 A Touch has Accepted Truth if:<br />
-                                a) It is rung on n bells;<br />
-                                b) It comprises (i) Round Block(s) with an Effective Stage of n and
-                                    (ii) Round Block(s) with an Effective Stage of n-1 and with nth's Place a Fixed Place;<br />
-                                c) The Rows in (i) and (ii) are True when considered independently using the definition of True in Section 3.J.4; and<br/>
-                                d) The Rows in (i) contain at least one Extent at Stage n.
+								a) It contains one or more Extents at the Touch's Effective Stage;<br />
+								b) It contains one or more Extents at the next lower Stage than the Touch's Effective Stage; and<br />
+								c) Any Rows in addition to the above are distinct.
                             </p>
                             <div class="collapse" id="detailJ5">
                                 <hr />
                                 <p class="text-primary">
                                     <b>Futher explanation:</b> Accepted Truth applies most commonly to Touches of Doubles and Minor rung on 6 bells.
-                                    The bell in 6th's Place when ringing Doubles is a Cover Bell that is not affected by any Calls (i.e. 6th's Place is a Fixed Place).
-                                    Changes of Stage may only occur at the end of a Round Block (which will be the same Row as the initial Row).
-                                    If the Doubles Rows taken together are True, and the Minor Rows taken together are True,
-                                    then the Touch has Accepted Truth.
-                                    Note that a Row occuring at a change of Stage (which will be the same as the initial Row since changes of Stage only occur at the end
-                                    of a Round Block) is counted as a Row of the following Round Block when 
-                                    determining Truth at the individual Stages.
-                                    The initial Row is counted as part of the first Round Block when determining Truth at the individual Stages,
-                                    and the final Row is excluded.
+                                    When ringing Doubles, 6th's Place normally becomes a Cover Bell.
                                 </p>
 
-                                <hr />
-                                <p class="text-muted">
-                                    <b>Technical comment:</b> Note that no Round Block in a Touch with Accepted Truth can comprise only one Identity Change.
-                                    This Round Block would have an Effective Stage of zero, and since an Effective Stage of one is not possible (see Section 3.J.3),
-                                    the n / n-1 requirement for two adjacent Effective Stages in Accepted Truth cannot be met.
-                                    The lowest pair of Effective Stages in a Touch that can have Accepted Truth are therefore 2 and 3.
+                                <p class="text-primary">
+                                    If a Touch is a Round Block, the final Row is excluded when determining whether the Touch has Accepted Truth.
+                                    Opening and closing Rounds, as described in Section 3.J.4, are also excluded when determining Accepted Truth.
                                 </p>
 
                                 <hr />
