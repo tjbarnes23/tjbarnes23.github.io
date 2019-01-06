@@ -1497,20 +1497,49 @@
                             5.
                         </div>
                         <div class="col-xl-2 col-sm-3">
-                            Accepted Truth
+                            Complete (Incomplete)
                             <span class="float-right">
                                 <a class="text-success more collapsed" data-toggle="collapse" href="#detailJ5"></a>
                             </span>
                         </div>
                         <div class="col-xl-9 col-sm-8">
                             <p>
-                                A Touch has Accepted Truth if it is True, or if:<br />
-                                a) It is rung on n bells;<br />
-                                b) It contains one or more Extents at Stage n;<br />
-                                c) It contains one or more Extents at Stage n-1, with the same bell ringing in nth's Place for these Rows; and<br />
-                                d) Any Rows in addition to the above are distinct.
+                                A Touch is Complete if it contains all possible Rows at the Touch's Effective Stage exactly once,
+                                or exactly the same number of times. (Anything else is Incomplete.)
                             </p>
                             <div class="collapse" id="detailJ5">
+                                <hr />
+                                <p class="text-primary">
+                                    <b>Futher explanation:</b> A 540 of Minor may be True but is Incomplete;<br />
+                                    A 720 of Minor may be True, and if it is, it will also be Complete;<br />
+                                    A 1260 of Minor may be True but is Incomplete;<br />
+                                    A 1440 of Minor may be True, and if it is, it will also be Complete;<br />
+                                    etc.
+                                </p>
+
+                                <hr />
+                            </div>
+                        </div>
+                    </div>                    
+
+                    <div class="row">
+                        <div class="col-sm-1">
+                            6.
+                        </div>
+                        <div class="col-xl-2 col-sm-3">
+                            Accepted Truth
+                            <span class="float-right">
+                                <a class="text-success more collapsed" data-toggle="collapse" href="#detailJ6"></a>
+                            </span>
+                        </div>
+                        <div class="col-xl-9 col-sm-8">
+                            <p>
+                                A Touch rung on n bells has Accepted Truth if it is True, or it is comprised of Round Blocks that can be divided into two groups where:<br />
+                                a) One group forms a True Touch with an Effective Stage of n and contains at least one Extent at Stage n;<br />
+                                b) The other group forms a True Touch with an Effective Stage of n-1 and the same bell rings in nth’s Place in every Row; and<br />
+                                c) Only one group may be an Incomplete Touch at its respective Effective Stage.
+                            </p>
+                            <div class="collapse" id="detailJ6">
                                 <hr />
                                 <p class="text-primary">
                                     <b>Futher explanation:</b> Accepted Truth applies most commonly to Touches of Doubles and Minor rung on 6 bells.
@@ -1518,8 +1547,15 @@
                                 </p>
 
                                 <p class="text-primary">
-                                    If a Touch is a Round Block, the final Row is excluded when determining whether the Touch has Accepted Truth.
-                                    Opening and closing Rounds, as described in Section 3.J.4, are also excluded when determining Accepted Truth.
+                                    A Row occuring at a change of Effective Stage (which will be the same as the initial Row
+                                    since changes of Effective Stage can only occur at the end of a Round Block)
+                                    is counted as a Row of the following Round Block when determining the Truth of the two groups.
+                                    The initial Row is counted as part of the first Round Block when determining the Truth of the two groups, and the final Row is excluded.
+                                </p>
+
+                                <p class="text-primary">
+                                    Note that a Touch with Accepted Truth will contain one or more Extents at Stage n,
+                                    zero or more Extents at Stage n-1, and any remaining Rows will be distinct.
                                 </p>
 
                                 <hr />
